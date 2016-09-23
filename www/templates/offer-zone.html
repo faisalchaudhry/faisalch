@@ -1,0 +1,41 @@
+<ion-view >
+    <ion-header-bar class="bar bar-header HeaderColor">
+
+		<h1 class="title TitleCenter TitleColor" style="text-align: left;left:0px;"> Firstcoo </h1>
+		<div class="TwoIconHeader">
+			<button ng-click="goToCartPage()" class="button button-clear icon-right ion-android-cart MenuIconColor">
+				<span class="badge badge-assertive CartCounter">01</span>
+			</button>
+			<button ng-click="popover.show($event)" class="button button-clear icon-right ion-ios-person MenuIconColor" style="width: 28px; "></button>
+			<button menu-toggle="right" class="button button-clear icon-right ion-android-menu MenuIconColor"></button>
+		</div>
+	</ion-header-bar>
+    <div class="bar bar-subheader SubHeaderNotification">
+        <p>
+            FirstCoo OFFER ZONE
+        </p>
+    </div>
+    <ion-content class="has-header has-subheader" style="background: #eeeeee;">
+        <div class="Wrapper">
+            <div class="OfferZoneMain">
+                <div class="OfferZoneThumbs">
+                    <div class="OfferZoneImg"><img src="img/Offers/offer_zone_img.png">
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="OfferZoneTabsMain WhiteBackground" id="OffersZoneTab">
+                    <div class="OfferZoneTabs tabs tabs-full-width" style="line-height: 33px; height: 36px;">
+                        <a ng-click="changeTab(1)" ng-class="OffersTab1Class">Today's Deals</a>
+                        <a ng-click="changeTab(2)" ng-class="OffersTab2Class">Fashion Corner</a>
+                        <a ng-click="changeTab(3)" ng-class="OffersTab3Class">Daily Deals</a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <!-- Today's Deals -->
+                <div  class="Tab-1" ng-include src="template"></div>
+                <!-- Today's Deals -->
+
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

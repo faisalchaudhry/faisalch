@@ -1,0 +1,351 @@
+<ion-view >
+    <ion-header-bar class="bar bar-header HeaderColor">
+
+		<h1 class="title TitleCenter TitleColor" style="text-align: left;left:0px;"> Firstcoo </h1>
+		<div class="TwoIconHeader">
+			<button ng-click="goToCartPage()" class="button button-clear icon-right ion-android-cart MenuIconColor">
+				<span class="badge badge-assertive CartCounter">01</span>
+			</button>
+			<button ng-click="popover.show($event)" class="button button-clear icon-right ion-ios-person MenuIconColor" style="width: 28px; "></button>
+			<button menu-toggle="right" class="button button-clear icon-right ion-android-menu MenuIconColor"></button>
+		</div>
+	</ion-header-bar>
+    <ion-content class="has-header" style="background: #d9d9d9;">
+        <div class="Wrapper">
+            <div class="BabyClothesBanner">
+                <img src="img/baby-clothes/baby-clothes-banner.png">
+            </div>
+            <div class="BabyClothesMain">
+                <div class="BabyClothesThumbs">
+                    <h2> Baby Clothes & Dresses for Girls & Boys </h2>
+                    <div class="ClothingFootwear">
+                        <div class="Clothing" id="ClothingExpand">
+
+                            <!-- Clothes -->
+                            <ion-item class="item-stable item-icon-right" ng-click="togglebabyClothes(babyClothes)" ng-class="{active: isbabyClothesShown(babyClothes)}">
+                                <div class="ExpandImg">
+                                    <img src="img/baby-clothes/baby-clothes-expand-img.png" />
+                                </div>
+                                <span class="ExpandTitle">Clothing</span>
+                                <i class="icon" ng-class="isbabyClothesShown(babyClothes) ? 'ion-android-remove' : 'ion-android-add'" style="right: 0;"></i>
+                            </ion-item>
+                            <!-- Shop By Category -->
+                            <ion-item class="item-accordion item-icon-left item-icon-right" ng-show="isbabyClothesShown(babyClothes)">
+                                <div class="SubExpandClothing" ng-click="toggleBabyClothesCat(babyClothesCat)">
+                                    Shop By Category
+                                    <i class="icon" id="ExpandPlusMinusCloting" ng-class="isBabyClothesCategoryShown(babyClothesCat) ? 'ion-android-remove' : 'ion-android-add'" ></i>
+                                </div>
+                                <ion-item id="SubExpand"  class="item-accordion item-icon-left item-icon-right" ng-show="isBabyClothesCategoryShown(babyClothesCat)">
+                                    <div ng-click="goToCategoryList()" class="SubExpandCloting">
+                                        Onesies and Rompers
+                                    </div>
+                                    <div ng-click="goToCategoryList()" class="SubExpandCloting">
+                                        Frocks
+                                    </div>
+                                    <div ng-click="goToCategoryList()" class="SubExpandCloting">
+                                        Tops and Tees
+                                    </div>
+                                    <div ng-click="goToCategoryList()" class="SubExpandCloting">
+                                        Shorts, Skirts and Jeans
+                                    </div>
+                                    <div ng-click="goToCategoryList()" class="SubExpandCloting">
+                                        Pajamas and Leggings
+                                    </div>
+                                    <div ng-click="goToCategoryList()" class="SubExpandCloting">
+                                        Inner Wear
+                                    </div>
+                                    <div ng-click="goToCategoryList()" class="SubExpandCloting">
+                                        Caps
+                                    </div>
+                                    <div ng-click="goToCategoryList()" class="SubExpandCloting">
+                                        Sets and Suites
+                                    </div>
+                                    <div ng-click="goToCategoryList()" class="SubExpandCloting">
+                                        Night Wear
+                                    </div>
+                                    <div ng-click="goToCategoryList()" class="SubExpandCloting">
+                                        Bath Time
+                                    </div>
+                                    <div ng-click="goToCategoryList()" class="SubExpandCloting">
+                                        Bibs and Hankies
+                                    </div>
+                                    <div ng-click="goToCategoryList()" class="SubExpandCloting">
+                                        Socks and Tights
+                                    </div>
+                                    <div ng-click="goToCategoryList()" class="SubExpandCloting">
+                                        Shirts
+                                    </div>
+                                    <div ng-click="goToCategoryList()" class="SubExpandCloting">
+                                        Ethnic Wear
+                                    </div>
+                                    <div ng-click="goToCategoryList()" class="SubExpandCloting">
+                                        Party Wear
+                                    </div>
+                                    <div ng-click="goToCategoryList()" class="SubExpandCloting">
+                                        Baby Gift Sets
+                                    </div>
+                                    <div ng-click="goToCategoryList()" class="SubExpandCloting">
+                                        Sweaters
+                                    </div>
+                                    <div ng-click="goToCategoryList()" class="SubExpandCloting">
+                                        Blankets, Quilts and Wraps
+                                    </div>
+                                    <div ng-click="goToCategoryList()" class="SubExpandCloting">
+                                        Sweat Shirts and Jackets
+                                    </div>
+                                    <div ng-click="goToCategoryList()" class="SubExpandCloting">
+                                        On Sale - Baby Clothes
+                                    </div>
+                                </ion-item>
+                            </ion-item>
+                            <!-- Shop By Category -->
+                            <!-- Shop By Age -->
+                            <ion-item class="item-accordion item-icon-left item-icon-right" ng-show="isbabyClothesShown(babyClothes)">
+                                <div class="SubExpandClothing" ng-click="toggleBabyClothesAge(babyClothesAge)">
+                                    Shop By Age
+                                    <i class="icon" id="ExpandPlusMinusCloting" ng-class="isBabyClothesAgeShown(babyClothesAge) ? 'ion-android-remove' : 'ion-android-add'" ></i>
+                                </div>
+                                <ion-item id="SubExpand"  class="item-accordion item-icon-left item-icon-right" ng-show="isBabyClothesAgeShown(babyClothesAge)">
+                                    <div ng-click="goToCategoryList()" class="SubExpandCloting">
+                                        Newborn - 0 to 3 months
+                                    </div>
+                                    <div ng-click="goToCategoryList()" class="SubExpandCloting">
+                                        3 to 6 months
+                                    </div>
+                                    <div ng-click="goToCategoryList()" class="SubExpandCloting">
+                                        6 to 9 months
+                                    </div>
+                                    <div ng-click="goToCategoryList()" class="SubExpandCloting">
+                                        9 to 12 months
+                                    </div>
+                                    <div ng-click="goToCategoryList()" class="SubExpandCloting">
+                                        12 to 18 months
+                                    </div>
+                                    <div ng-click="goToCategoryList()" class="SubExpandCloting">
+                                        18 to 24 months
+                                    </div>
+                                </ion-item>
+                            </ion-item>
+                            <!-- Shop By Age -->
+                            <!-- Clothes -->
+                        </div>
+                        <div class="Footwear" id="ClothingExpand">
+                            <!-- Footwear -->
+                            <ion-item style="margin-top: 5px;" class="item-stable item-icon-right" ng-click="togglebabyFootwear(babyFootwear)" ng-class="{active: isbabyFootwearShown(babyFootwear)}">
+                                <div class="ExpandImg">
+                                    <img src="img/baby-clothes/baby-footwear-expand-img.png" />
+                                </div>
+                                <span class="ExpandTitle">Footwear</span>
+                                <i class="icon" ng-class="isbabyClothesShown(babyFootwear) ? 'ion-android-remove' : 'ion-android-add'" style="right: 0;"></i>
+                            </ion-item>
+                            <!-- Shop By Category -->
+                            <ion-item class="item-accordion item-icon-left item-icon-right" ng-show="isbabyClothesShown(babyFootwear)">
+                                <div class="SubExpandClothing" ng-click="toggleBabyFootwearCat(babyFootwearCat)">
+                                    Shop By Category
+                                    <i class="icon" id="ExpandPlusMinusCloting" ng-class="isBabyClothesCategoryShown(babyFootwearCat) ? 'ion-android-remove' : 'ion-android-add'" ></i>
+                                </div>
+                                <ion-item id="SubExpand"  class="item-accordion item-icon-left item-icon-right" ng-show="isBabyClothesCategoryShown(babyFootwearCat)">
+                                    <div ng-click="goToCategoryList()" class="SubExpandCloting">
+                                        Booties
+                                    </div>
+                                    <div ng-click="goToCategoryList()" class="SubExpandCloting">
+                                        Sandals
+                                    </div>
+                                    <div ng-click="goToCategoryList()" class="SubExpandCloting">
+                                        Casual Shoes
+                                    </div>
+                                    <div ng-click="goToCategoryList()" class="SubExpandCloting">
+                                        Formal and Party Wear
+                                    </div>
+                                    <div ng-click="goToCategoryList()" class="SubExpandCloting">
+                                        Clogs
+                                    </div>
+                                    <div ng-click="goToCategoryList()" class="SubExpandCloting">
+                                        Bellies and Peep Toes
+                                    </div>
+                                    <div ng-click="goToCategoryList()" class="SubExpandCloting">
+                                        Sneaker and Sports Shoes
+                                    </div>
+                                    <div ng-click="goToCategoryList()" class="SubExpandCloting">
+                                        On Sale - Footwear
+                                    </div>
+                                </ion-item>
+                            </ion-item>
+                            <!-- Shop By Category -->
+                            <!-- Shop By Color -->
+                            <ion-item class="item-accordion item-icon-left item-icon-right" ng-show="isbabyClothesShown(babyFootwear)">
+                                <div class="SubExpandClothing" ng-click="toggleBabyFootwearColor(babyFootwearColor)">
+                                    Shop By Color
+                                    <i class="icon" id="ExpandPlusMinusCloting" ng-class="isBabyClothesAgeShown(babyFootwearColor) ? 'ion-android-remove' : 'ion-android-add'" ></i>
+                                </div>
+                                <ion-item id="SubExpand"  class="item-accordion item-icon-left item-icon-right" ng-show="isBabyClothesAgeShown(babyFootwearColor)">
+                                    <div ng-click="goToCategoryList()" class="SubExpandCloting">
+                                        Beige
+                                    </div>
+                                    <div ng-click="goToCategoryList()" class="SubExpandCloting">
+                                        Black
+                                    </div>
+                                    <div ng-click="goToCategoryList()" class="SubExpandCloting">
+                                        Red
+                                    </div>
+                                    <div ng-click="goToCategoryList()" class="SubExpandCloting">
+                                        Blue
+                                    </div>
+                                    <div ng-click="goToCategoryList()" class="SubExpandCloting">
+                                        Brown
+                                    </div>
+                                    <div ng-click="goToCategoryList()" class="SubExpandCloting">
+                                        Golden
+                                    </div>
+                                    <div ng-click="goToCategoryList()" class="SubExpandCloting">
+                                        Green
+                                    </div>
+                                    <div ng-click="goToCategoryList()" class="SubExpandCloting">
+                                        Grey
+                                    </div>
+                                    <div ng-click="goToCategoryList()" class="SubExpandCloting">
+                                        Maroon
+                                    </div>
+                                    <div ng-click="goToCategoryList()" class="SubExpandCloting">
+                                        Multi Color
+                                    </div>
+                                    <div ng-click="goToCategoryList()" class="SubExpandCloting">
+                                        Off White/Cream
+                                    </div>
+                                    <div ng-click="goToCategoryList()" class="SubExpandCloting">
+                                        Orange
+                                    </div>
+                                    <div ng-click="goToCategoryList()" class="SubExpandCloting">
+                                        Pink
+                                    </div>
+                                    <div ng-click="goToCategoryList()" class="SubExpandCloting">
+                                        Purple/Violet
+                                    </div>
+                                    <div ng-click="goToCategoryList()" class="SubExpandCloting">
+                                        Silver
+                                    </div>
+                                    <div ng-click="goToCategoryList()" class="SubExpandCloting">
+                                        White
+                                    </div>
+                                    <div ng-click="goToCategoryList()" class="SubExpandCloting">
+                                        Yellow
+                                    </div>
+                                </ion-item>
+                            </ion-item>
+                            <!-- Shop By Color -->
+                            <!-- Footwear -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="SliderMain2">
+                <div class="SecondSliderHeader BlueBackground">
+                    Don't Miss
+                </div>
+                <div class="ThreeItemData tsb-ic-wrp">
+                    <ion-scroll direction="x" class="tsb-hscroll">
+
+                        <div class="BabyClothesSlider">
+                            <div class="CustomSlideTop">
+                                <p>
+                                    Bleeding Blue By Babyhug
+                                </p>
+                            </div>
+                            <div class="CustomSlideMiddle">
+                                <img src="img/baby-clothes/slider-img-1.png" />
+                            </div>
+                            <div class="CustomSlideBottom">
+                                Shop Now
+                            </div>
+                        </div>
+
+                        <div class="BabyClothesSlider">
+                            <div class="CustomSlideTop">
+                                <p>
+                                    Bleeding Blue By Babyhug
+                                </p>
+                            </div>
+                            <div class="CustomSlideMiddle">
+                                <img src="img/baby-clothes/slider-img-2.png" />
+                            </div>
+                            <div class="CustomSlideBottom">
+                                Shop Now
+                            </div>
+                        </div>
+
+                        <div class="BabyClothesSlider">
+                            <div class="CustomSlideTop">
+                                <p>
+                                    Bleeding Blue By Babyhug
+                                </p>
+                            </div>
+                            <div class="CustomSlideMiddle">
+                                <img src="img/baby-clothes/slider-img-1.png" />
+                            </div>
+                            <div class="CustomSlideBottom">
+                                Shop Now
+                            </div>
+                        </div>
+
+                        <div class="BabyClothesSlider">
+                            <div class="CustomSlideTop">
+                                <p>
+                                    Bleeding Blue By Babyhug
+                                </p>
+                            </div>
+                            <div class="CustomSlideMiddle">
+                                <img src="img/baby-clothes/slider-img-2.png" />
+                            </div>
+                            <div class="CustomSlideBottom">
+                                Shop Now
+                            </div>
+                        </div>
+
+                        <div class="BabyClothesSlider">
+                            <div class="CustomSlideTop">
+                                <p>
+                                    Bleeding Blue By Babyhug
+                                </p>
+                            </div>
+                            <div class="CustomSlideMiddle">
+                                <img src="img/baby-clothes/slider-img-1.png" />
+                            </div>
+                            <div class="CustomSlideBottom">
+                                Shop Now
+                            </div>
+                        </div>
+
+                        <div class="BabyClothesSlider">
+                            <div class="CustomSlideTop">
+                                <p>
+                                    Bleeding Blue By Babyhug
+                                </p>
+                            </div>
+                            <div class="CustomSlideMiddle">
+                                <img src="img/baby-clothes/slider-img-2.png" />
+                            </div>
+                            <div class="CustomSlideBottom">
+                                Shop Now
+                            </div>
+                        </div>
+
+                        <div class="BabyClothesSlider">
+                            <div class="CustomSlideTop">
+                                <p>
+                                    Bleeding Blue By Babyhug
+                                </p>
+                            </div>
+                            <div class="CustomSlideMiddle">
+                                <img src="img/baby-clothes/slider-img-1.png" />
+                            </div>
+                            <div class="CustomSlideBottom">
+                                Shop Now
+                            </div>
+                        </div>
+                    </ion-scroll>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

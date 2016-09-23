@@ -1,0 +1,2354 @@
+body {
+    font-family: 'Lato', sans-serif !important;
+}
+.clear {
+    clear: both;
+    margin: 0;
+    padding: 0;
+}
+body .menu-animated {
+    -webkit-transition: -webkit-transform 1000ms ease;
+    -moz-transition: -moz-transform 1000ms ease;
+    transition: transform 1000ms ease;
+    font-family: 'Lato', sans-serif !important;
+}
+/*------------------------ Splash --------------------------*/
+.MainWrapper {
+    width: 100%;
+    font-family: 'Lato', sans-serif !important;
+}
+.outer {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+#SpLogo {
+    width: 30%;
+    margin: 0 auto;
+    display: table-cell;
+    vertical-align: middle;
+}
+#SpLogo img {
+    width: 100%;
+    background-size: 100% 100%;
+}
+.inner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+/*------------------------ Splash --------------------------*/
+
+/*------------------------ Menu / Expand --------------------------*/
+.fa-bell, .fa-tags, .fa-sitemap, .ion-android-remove, .ion-android-add {
+    margin-right: 10px;
+    font-size: 16px !important;
+}
+.fa-eye, .fa-shopping-cart, .fa-book, .fa-user {
+    color: #3d91c2;
+    padding-left: 20px;
+    margin-right: 10px;
+    font-size: 16px !important;
+}
+#ExpandPlusMinus {
+    position: relative !important;
+    float: right !important;
+    top: 7px !important;
+    font-size: 22px !important;
+    right: 1px;
+}
+.SubMenuActivity {
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    float: left;
+}
+#MenuIcon img {
+    margin-left: 15px;
+    margin-right: 10px;
+    position: relative;
+    top: 6px;
+    color: #3d91c2;
+}
+#SubExpand {
+    background-color: #d3d3d3 !important;
+}
+.SubExpandMenu {
+    border-bottom: 1px solid #fff;
+    padding-left: 30px;
+}
+.ion-android-menu::before {
+    font-size: 28px !important;
+    line-height: 34px !important;
+}
+.MenuIconColor {
+    color: #999999;
+}
+/*--  --*/
+.list .item.item-accordion {
+    line-height: 38px;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    transition: 0.5s all linear;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.list .item.item-accordion.ng-hide {
+    line-height: 0px;
+}
+.list .item.item-accordion.ng-hide-add, .list .item.item-accordion.ng-hide-remove {
+    display: block !important;
+}
+.title {
+    left: 0px !important;
+    font-size: 20px !important;
+    font-weight: bold !important;
+}
+.has-header {
+    /*top: 0px !important;*/
+}
+.MenuItemtop {
+    top: 0px !important;
+}
+.innerpagestitle {
+    left: 27px !important;
+    border-left: 1px solid #ccc;
+    padding-left: 10px;
+}
+.arrow-left {
+
+}
+/*------------------------ Menu / Expand --------------------------*/
+
+/*------------------------ Buttons/Colors --------------------------*/
+.left {
+    float: left;
+}
+.TwoIconHeader {
+    text-align: right;
+    position: absolute;
+    right: 5px;
+    width: 46%;
+   
+}
+.CartCounter {
+    position: absolute !important;
+    right: 0;
+    padding: 1px 6px;
+    font-weight: normal;
+    font-size: 9px;
+    background-color: #fadb32 !important;
+    color: #000 !important;
+}
+.BlueText {
+    color: #77d0e4;
+}
+.RedColor {
+    color: red;
+}
+.HeaderColor {
+    background: #fff;
+    -webkit-box-shadow: 0 3px 5px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,0.3);
+    z-index: 10;
+}
+.BlueBackground {
+    background: #77d0e4;
+}
+.DarkGreyBackground {
+    background: #3d3d3d;
+}
+.WhiteBackground {
+    background: #ffffff;
+}
+.DarkGrey {
+    color: #333333;
+}
+.action-sheet-group .button {
+    background: #77d0e4;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: 300;
+    font-size: 18px;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    min-height: 34px;
+    line-height: 30px;
+}
+.blue_actionSheet_btn {
+    background: #77d0e4 !important;
+    color: #ffffff !important;
+    width: 60%;
+    border-radius: 50px;
+    margin: 0 auto;
+    text-align: center;
+    min-height: 30px;
+    font-size: 16px !important;
+    max-height: 45px;
+    line-height: 35px;
+    font-weight: 400 !important;
+}
+.action-sheet-options {
+    background: transparent;
+}
+.action-sheet-group {
+    background: transparent;
+}
+.grey_actionSheet_btn {
+    background: #dfdfdf !important;
+    color: #97979c !important;
+    width: 60%;
+    border-radius: 50px;
+    margin: 0 auto;
+    text-align: center;
+    min-height: 30px;
+    font-size: 16px !important;
+    max-height: 45px;
+    line-height: 35px;
+}
+.OrangeBigButton {
+    background: #ff921b;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 8px 10px;
+    font-size: 17px;
+    font-weight: 300;
+}
+/*------------------------ Buttons/Colors --------------------------*/
+
+/*------------------------ Dashboard --------------------------*/
+.DashSearch {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#77d0e4+0,659cbf+100 */
+    background: #fadb32 !important;/*#77d0e4; /* Old browsers */
+   	/*background: -moz-linear-gradient(top,  #77d0e4 0%, #659cbf 100%); 
+    background: -webkit-linear-gradient(top,  #77d0e4 0%,#659cbf 100%); 
+    background: linear-gradient(to bottom,  #77d0e4 0%,#659cbf 100%); */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#77d0e4', endColorstr='#659cbf',GradientType=0 ); 
+    width: 100%;
+    height: 44px;
+}
+.DashSearchInput {
+    background: white;
+    width: 95%;
+    margin: 0 auto;
+    padding: 0;
+    /*border-radius: 100px;*/
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-top: 6px;
+}
+.DashSearchInput input {
+    height: 25px;
+    line-height: 25px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.SliderMain {
+    width: 100%;
+    /* height: 150px;
+     min-height: 150px;
+     max-height: 250px;*/
+    text-align: center;
+}
+.box {
+    line-height: 140px;
+    height: 140px;
+}
+.SliderImg {
+    width: 100%;
+}
+.SliderImg img {
+    background-size: 100% 100%;
+    width: 100%;
+}
+.slider-pager {
+    background: rgba(0, 0, 0, 0.4);
+    bottom: 0;
+    height: 22px;
+}
+.slider-pager .slider-pager-page {
+    width: 8px;
+    color: white;
+}
+.slider-pager-page i.ion-record {
+    font-size: 8px;
+    color: white;
+}
+.PremiumBoutiqueExplore {
+    min-height: 70px;
+    margin: 10px;
+}
+.BoutiqueExploreL {
+    float: left;
+    width: 30%;
+    position: relative;
+    top: 50%;
+    transform: translateY(40%);
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.BoutiqueExploreL img {
+    width: 100%;
+    background-size: 100% 100%;
+}
+.BoutiqueExploreR {
+    float: left;
+    height: 70px;
+    line-height: 67px;
+}
+.BoutiqueExploreR h2 {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #fff;
+    line-height: 70px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    float: left;
+}
+.BoutiqueExploreR p {
+    margin: 0;
+    float: left;
+    margin-left: 10px;
+    color: #9d9d9d;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 70px;
+}
+.BoutiqueExploreR p i.ion-ios-arrow-right {
+    margin-left: 5px;
+}
+.ShopByCategoryDashboard {
+    margin: 10px;
+}
+.ShopByCategoryDashboard h2 {
+    font-size: 18px;
+    padding: 8px 5px;
+}
+.ShopbyCategoryThumbs {
+    background: #fff;
+    float: left;
+    width: 100%;
+}
+.Dash-Cat-1 {
+    position: relative;
+    width: 100%;
+    float: left;
+}
+.Dash-Cat-1 img {
+    width: 100%;
+    float: left;
+    background-size: 100% 100%;
+}
+.Dash-Cat-Name {
+    text-transform: uppercase;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 12px;
+    padding: 1px 6px;
+}
+.TriangleD {
+    width: 0;
+    height: 0;
+    border-right: 10px solid transparent;
+    border-top: 13px solid #3d3d3d;
+    position: absolute;
+    top: 22px;
+    left: 0;
+}
+.Dash-Cat-2 {
+    width: 100%;
+    position: relative;
+    margin-top: 10px;
+    float: left;
+}
+.Cat-L {
+    float: left;
+    width: 60%;
+}
+.Cat-L img, .Cat-R img {
+    width: 100%;
+    background-size: 100% 100%;
+}
+.Cat-R {
+    width: 40%;
+    float: right;
+}
+.Cat-R-Top {
+    width: 94.5%;
+    position: relative;
+    float: right;
+}
+.Cat-R-Top img {
+    width: 100%;
+    background-size: 100% 100%;
+}
+.Cat-R-Botom {
+    width: 94.5%;
+    position: relative;
+    float: right;
+}
+.Cat-R-Botom img {
+    width: 100%;
+    background-size: 100% 100%;
+}
+.Dash-Cat-3 {
+    width: 100%;
+    position: relative;
+    margin-top: 5px;
+    float: left;
+}
+.Cat-L-half {
+    float: left;
+    width: 49%;
+    position: relative;
+}
+.Cat-L-half img, .Cat-R-half img {
+    width: 100%;
+    background-size: 100% 100%;
+}
+.Cat-R-half {
+    width: 49%;
+    float: right;
+    position: relative;
+}
+.BoutiqueThumbs {
+    padding: 10px;
+    background: #fff;
+    margin-bottom: 10px;
+    float: left;
+    width: 100%;
+}
+.BoutiqueThumbs img {
+    width: 100%;
+    background-size: 100% 100%;
+}
+.P-Boutique-heading-L {
+    color: #000;
+    float: left;
+}
+.P-Boutique-heading-R {
+    float: right;
+}
+.P-Boutique-heading2-L {
+    color: #999999;
+    float: left;
+}
+.P-Boutique-heading2-R {
+    float: right;
+    color: #999999;
+}
+.PremiumBoutiqueM {
+    min-height: 70px;
+}
+.PremiumBoutiqueMain {
+    width: 100%;
+    float: left;
+}
+.BoutiqueThumbsMain {
+    margin: 10px;
+    padding-top: 1px;
+    margin-top: 0;
+    float: left;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.SecondSliderHeader {
+    width: 100%;
+    padding: 10px 5px;
+    color: #fff;
+    font-size: 16px;
+    text-align: left;
+    margin-top: 10px;
+}
+.SliderMain2 {
+    width: 100%;
+    height: 150px;
+    min-height: 150px;
+    max-height: 250px;
+    text-align: center;
+    padding: 10px;
+}
+/*------------------------ Dashboard --------------------------*/
+
+/*------------------------ Notifications --------------------------*/
+.SubHeaderNotification {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#77d0e4+0,659cbf+100 */
+    background: #77d0e4; /* Old browsers */
+    background: -moz-linear-gradient(top,  #77d0e4 0%, #659cbf 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #77d0e4 0%,#659cbf 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #77d0e4 0%,#659cbf 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#77d0e4', endColorstr='#659cbf',GradientType=0 ); /* IE6-9 */
+    width: 100%;
+    height: 44px;
+}
+.SubHeaderNotification p {
+    line-height: 34px;
+    margin-bottom: 0;
+    font-size: 16px;
+    margin-left: 10px;
+}
+.NotificationsMain {
+    margin: 10px;
+}
+.NotificationImg {
+    margin-top: 6px;
+    float: left;
+}
+.NotificationThumbs {
+    padding: 10px;
+    background: #fff;
+    margin-bottom: 10px;
+    float: left;
+    position: relative;
+}
+.NotificationThumbs img {
+    width: 100%;
+    background-size: 100% 100%;
+}
+.NotificationDelete {
+    background: #f1f1f1;
+    float: right;
+    position: absolute;
+    right: -7px;
+    padding: 1px 6px;
+    border-radius: 4px;
+    top: 30px;
+    border: 1px solid #c9c9c9;
+}
+/*------------------------ Notifications --------------------------*/
+
+/*------------------------ Offer Zone --------------------------*/
+.OfferZoneMain {
+    margin: 10px;
+}
+.OfferZoneThumbs {
+    background: #fff;
+    margin-bottom: 10px;
+    float: left;
+    position: relative;
+}
+.OfferZoneThumbs img {
+    width: 100%;
+    background-size: 100% 100%;
+}
+.OfferZoneImg {
+    float: left;
+    border: 1px solid #bfbfbf;
+    line-height: 0;
+}
+.OfferZoneTabsMain {
+    width: 100%;
+    float: left;
+}
+.OfferZoneTabs {
+    background-color: #fff;
+    background-image: none;
+    width: 94%;
+    position: inherit;
+}
+#OffersZoneTab .tabs-full-width {
+    width: 100%;
+    margin: 0 auto;
+    top: 18px;
+    background: transparent;
+    border: none;
+    left: 0;
+}
+#OffersZoneTab .tab-item.tab-item-active, #OffersZoneTab .tab-item.active, #OffersZoneTab .tab-item.activated {
+    opacity: 1;
+    border-bottom: 3px solid #659cbf;
+    background: transparent;
+    font-weight: 400;
+    color: #659cbf;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+}
+#OffersZoneTab .tab-item {
+    border-bottom: 1px solid #659cbf;
+    background: transparent;
+    color: #97979c;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+.OffersDealHeader {
+    width: 100%;
+    padding: 10px;
+}
+.OffersDealHeader h2 {
+    line-height: 14px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.DailyWrapper {
+    float: left;
+    width: 100%;
+}
+.TodaysDeals {
+    margin-top: 10px;
+    color: #999999;
+}
+.DailyOfferTop {
+    width: 100%;
+    margin-bottom: 10px;
+    float: left;
+}
+.DailyOfferL {
+    float: left;
+    width: 80%;
+}
+.DailyOfferR {
+    float: right;
+    font-size: 22px;
+}
+.OfferZoneDailyThumbs {
+    background: #fff;
+    margin-bottom: 10px;
+    float: left;
+    position: relative;
+    border: 1px solid #bfbfbf;
+    padding: 10px;
+    width: 100%;
+}
+.OfferZoneDailyThumbs img {
+    width: 100%;
+    background-size: 100% 100%;
+}
+.DailyOfferBottom {
+    width: 100%;
+    margin-top: 10px;
+    font-size: 13px;
+}
+.DailyOfferBottomL {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    border-right: 1px solid #bfbfbf;
+}
+.DailyOfferBottomL p, .DailyOfferBottomC p, .DailyOfferBottomR p {
+    margin-bottom: 0;
+}
+.DailyOfferBottomC {
+    float: left;
+    width: 40.33%;
+    text-align: center;
+}
+.DailyOfferBottomR {
+    float: right;
+    width: 26.33%;
+    text-align: center;
+    border-left: 1px solid #bfbfbf;
+}
+.DailyOfferBottomFull {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+.DailyOfferBottomFull p {
+    margin-bottom: 0;
+    float: left;
+    margin-right: 15px;
+    text-align: center;
+    width: 100%;
+}
+/*------------------------ Offer Zone --------------------------*/
+
+/*------------------------ Recently Viewed --------------------------*/
+.RecentyViewedMain {
+    margin: 10px;
+}
+.RecentyViewedThumbs {
+    padding: 10px;
+    background: #fff;
+    margin-bottom: 10px;
+    float: left;
+    position: relative;
+}
+.RecentyViewedThumbs img {
+    width: 100%;
+    background-size: 100% 100%;
+}
+.RecentyViewedDelete {
+    background: #f1f1f1;
+    float: right;
+    position: absolute;
+    right: -7px;
+    padding: 1px 6px;
+    border-radius: 4px;
+    top: 10px;
+    border: 1px solid #c9c9c9;
+}
+.RecentyViewedImg {
+    margin-top: 6px;
+    margin: 0 auto;
+    width: 50%;
+}
+.P-RecentlyViewedHeading {
+    color: #000;
+    float: left;
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 280px;
+}
+.P-RecentlyViewedHeading2 {
+    color: #7a7a7a;
+    float: left;
+    font-size: 12px;
+    line-height: 17px;
+    font-weight: 300;
+}
+.RecentyViewedThumbs p {
+    margin-bottom: 0;
+    margin-top: 10px;
+    float: left;
+}
+/*------------------------ Recently Viewed --------------------------*/
+
+/*------------------------ My Shortlisted --------------------------*/
+.ShortListedShare {
+    width: 100%;
+    border-top: 1px solid #c9c9c9;
+    float: right;
+    text-align: right;
+}
+.ShortListM {
+    float: left;
+}
+.ShortListedShare i {
+    width: 5%;
+    float: right;
+    margin-right: 10px;
+    line-height: 26px;
+    font-size: 21px;
+    color: #999;
+}
+/*------------------------ My Shortlisted --------------------------*/
+
+/*------------------------ Login Register --------------------------*/
+.LoginRegisterMain {
+    margin: 10px;
+    width: 94%;
+    float: left;
+}
+#LoginRegisterTab .tabs-full-width {
+    width: 94%;
+    margin: 0 auto;
+    top: 18px;
+    background: transparent;
+    border: none;
+    left: 0;
+    margin: 10px;
+}
+#LoginRegisterTab .tab-item.tab-item-active, #LoginRegisterTab .tab-item.active, #LoginRegisterTab .tab-item.activated {
+    opacity: 1;
+    border: 2px solid #b5b5b5;
+    background: #b5b5b5;
+    font-weight: 400;
+    color: #fff;
+}
+#LoginRegisterTab .tab-item {
+    border: 2px solid #b5b5b5;
+    background: transparent;
+    color: #b5b5b5;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+.LoginMain {
+    width: 100%;
+    padding: 15px;
+    padding-bottom: 10px;
+}
+.LoginFrom {
+
+}
+.LoginInput input {
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    height: 35px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    font-weight: 300;
+}
+.LoginInput select {
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    height: 35px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    font-weight: 300;
+}
+.item-checkbox .checkbox {
+    padding-left: 0;
+    left: 0;
+}
+#LoginCheckbox {
+    border: none;
+    padding: 0;
+    padding-left: 35px;
+    margin-top: 10px;
+    height: 28px;
+    line-height: 21px;
+    font-size: 16px;
+    color: #adadad;
+    font-weight: 300;
+}
+#LoginCheckbox .checkbox input, #LoginCheckbox .checkbox-icon {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    display: block;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+#LoginCheckbox .checkbox input:before, #LoginCheckbox .checkbox .checkbox-icon:before {
+    border-color: #adadad;
+}
+#LoginCheckbox .checkbox input:before, #LoginCheckbox .checkbox-icon:before {
+    display: table;
+    width: 100%;
+    height: 100%;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 0;
+    background: #fff;
+    content: ' ';
+    -webkit-transition: background-color 20ms ease-in-out;
+    transition: background-color 20ms ease-in-out;
+}
+#LoginCheckbox .checkbox input:checked:before, #LoginCheckbox .checkbox input:checked + .checkbox-icon:before {
+    background: transparent;
+    border-color: #adadad;
+}
+#LoginCheckbox .checkbox input:after, .checkbox-icon:after {
+    -webkit-transition: opacity 0.05s ease-in-out;
+    transition: opacity 0.05s ease-in-out;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 27.5%;
+    left: 22%;
+    display: table;
+    width: 14px;
+    height: 7px;
+    border: 2px solid #adadad;
+    border-top: 0;
+    border-right: 0;
+    content: ' ';
+    opacity: 0;
+}
+.LoginBtn {
+    margin-top: 15px;
+    width: 100%;
+}
+.LoginBtn img {
+    width: 100%;
+    background-size: 100% 100%;
+}
+.ForgotPassword {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    color: #9f9f9f;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.RegInput1 {
+    width: 25%;
+    float: left;
+}
+.RegInput1 input {
+
+}
+.RegInput2 {
+    width: 70%;
+    float: right;
+}
+.RegInput2 input {
+
+}
+/*------------------------ Login Register --------------------------*/
+
+/*------------------------ Baby Fashion --------------------------*/
+.BabyClothesBanner {
+    margin: 0;
+}
+.BabyClothesBanner img {
+    width: 100%;
+    background-size: 100% 100%;
+}
+.BabyClothesMain {
+    margin: 10px;
+}
+.BabyClothesThumbs {
+    background: #fff;
+    margin-bottom: 10px;
+    float: left;
+    position: relative;
+    width: 100%;
+}
+.BabyClothesThumbs h2 {
+    font-size: 14px;
+    padding: 10px 5px;
+}
+.OfferZoneImg {
+    float: left;
+    border: 1px solid #bfbfbf;
+    line-height: 0;
+}
+.ClothingFootwear {
+    width: 96%;
+    margin: 6px;
+}
+.ExpandImg {
+    width: 45%;
+    float: left;
+    line-height: 0;
+}
+.ExpandImg img {
+    width: 100%;
+    background-size: 100% 100%;
+}
+.ExpandTitle {
+    height: 100%;
+    line-height: 77px;
+    margin-left: 10px;
+    float: left;
+    font-size: 16px;
+}
+#ClothingExpand .item {
+    border-color: transparent;
+    background-color: #e2e2e1;
+    color: #444;
+    position: relative;
+    z-index: 2;
+    display: block;
+    margin: -1px;
+    padding: 0;
+    border-width: 0;
+    border-style: 0;
+    font-size: inherit;
+    border-bottom: 1px solid #ddd;
+}
+.SubExpandClothing {
+    background: #fff;
+    float: left;
+    width: 100%;
+    padding: 7px 0px 7px 25px;
+    border-bottom: 1px solid #ddd;
+    color: #757575;
+    font-weight: 400;
+    font-size: 16px;
+}
+#ExpandPlusMinusCloting {
+    position: relative !important;
+    float: right !important;
+    top: 0px !important;
+    font-size: 19px !important;
+    right: -2px;
+    font-weight: bold;
+}
+.SubExpandCloting {
+    border-bottom: 1px solid #fff;
+    padding-left: 30px;
+    line-height: 30px;
+    height: 30px;
+}
+.ThreeItemData {
+    width: 100%;
+    background: #fff;
+    float: left;
+}
+.BabyClothesSlider {
+    width: 14%;
+    float: left;
+}
+.BabyCustomSlider {
+    float: left;
+}
+.CustomSlideTop p {
+    width: 100%;
+    text-align: center;
+    white-space: normal;
+    margin-bottom: 0;
+}
+.CustomSlideMiddle {
+    line-height: 0;
+}
+.tsb-hscroll .scroll {
+    width: max-content;
+    min-width: 1000px;
+}
+/*------------------------ Baby Fashion --------------------------*/
+
+/*------------------------ Clothes Category --------------------------*/
+.SubHeaderCategory {
+    height: 65px;
+    top: 88px;
+    background: #d9d9d9;
+    padding: 10px;
+}
+.CategroyTabs {
+    background: #fff;
+    padding: 0;
+    width: 95%;
+    height: 44px;
+    top: 10px;
+}
+.CategroyTabs a {
+    font-size: 12px;
+}
+#CategoryTab .tab-item.tab-item-active, #CategoryTab .tab-item.active, #CategoryTab .tab-item.activated {
+    opacity: 1;
+    background: transparent;
+    font-weight: 400;
+    color: #606060;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+}
+#CategoryTab .tab-item {
+    background: transparent;
+    color: #a9a9a9;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    text-transform: capitalize;
+    font-size: 12px;
+}
+/*------------------------ Clothes Category --------------------------*/
+
+/*------------------------ Filters --------------------------*/
+.FilterBg {
+    margin-top: 0px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    float: left;
+    background: #333333;
+    z-index: 99;
+}
+.FilterHeader {
+    width: 100%;
+}
+.FilterHeader h2 {
+    float: left;
+    color: #fff;k2
+    font-size: 18px;
+    padding: 13px 15px;
+    font-size: 20px;
+}
+.FilterHeaderButtons {
+    float: right;
+    padding: 13px 15px;
+}
+.FilterCancel {
+    float: left;
+    color: #fff;
+    width: 60px;
+    text-align: center;
+}
+.FilterApply {
+    float: right;
+    color: #fff;
+    width: 60px;
+    text-align: center;
+    background: #ff921b;
+}
+.FilterContentMain {
+    width: 100%;
+    float: left;
+    height: 100%;
+    position: fixed;
+}
+.FilterContentLeft {
+    width: 40%;
+    float: left;
+    background: #333333;
+    height: 100%;
+}
+.FilterContentLeft ul {
+
+}
+.FilterContentLeft ul li {
+    width: 100%;
+    float: left;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 12px;
+}
+.FilterContentLeft ul li i {
+    margin-right: 10px;
+}
+.FilterActive {
+    background: #fff;
+    color: #000 !important;
+}
+
+.FilterContentRight {
+    width: 60%;
+    float: left;
+    background: #fff;
+    height: 100%;
+}
+.FilterContentRight ul {
+
+}
+.FilterContentRight ul li {
+    width: 100%;
+    float: left;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-bottom: 1px solid #333;
+}
+.FilterContentRight ul li label {
+    padding: 5px 30px;
+    border: none;
+    font-size: 13px;
+}
+.FilterContentRight ul li .item-checkbox .checkbox {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    left: 0;
+    z-index: 3;
+    margin-top: -18px;
+}
+.FilterContentRight ul li label .checkbox input, .FilterContentRight ul li label .checkbox-icon {
+    position: relative;
+    width: 22px;
+    height: 22px;
+    display: block;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+.FilterContentRight ul li label .checkbox input:before, .FilterContentRight ul li label .checkbox-icon:before {
+    display: table;
+    width: 100%;
+    height: 100%;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 0;
+    background: #fff;
+    content: ' ';
+    -webkit-transition: background-color 20ms ease-in-out;
+    transition: background-color 20ms ease-in-out;
+    border-color: #333;
+}
+.FilterContentRight ul li label .checkbox input:checked:before, .FilterContentRight ul li label .checkbox input:checked + .checkbox-icon:before {
+    background: #fff;
+    border-color: #333;
+}
+.FilterContentRight ul li label  .checkbox input:after, .checkbox-icon:after {
+    -webkit-transition: opacity 0.05s ease-in-out;
+    transition: opacity 0.05s ease-in-out;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 27.5%;
+    left: 22%;
+    display: table;
+    width: 13px;
+    height: 7px;
+    border: 2px solid #333;
+    border-top: 0;
+    border-right: 0;
+    content: ' ';
+    opacity: 0;
+}
+
+/*------------------------ Filters --------------------------*/
+
+/*-------------termandcondition start-----------------------*/
+.termandconditionMain {
+    width: 100%;
+    background: #d9d9d9;
+}
+.termandconditionMain h2 {
+    margin-bottom: 12px;
+}
+.termandconditionInner {
+    width: 95%;
+    background: #fff;
+    margin: 0 auto;
+    text-align: justify;
+    padding: 15px 15px;
+}
+.right {
+    float: right;
+}
+/*-------------termandcondition end-------------------*/
+
+/*-------------privacypolicy start-----------------------*/
+.privacypolicyMain {
+    width: 100%;
+    background: #d9d9d9;
+}
+.privacypolicyMain h2 {
+    margin-bottom: 12px;
+}
+.privacypolicyInner {
+    width: 95%;
+    background: #fff;
+    margin: 0 auto;
+    text-align: justify;
+    padding: 15px 15px;
+}
+.right {
+    float: right;
+}
+/*-------------privacypolicy end-------------------*/
+
+/*---------------customer care start--------------------------*/
+#email-id {
+    color: darkmagenta;
+    position: relative;
+    top: -16px;
+    left: 13px;
+}
+#phone-id {
+    color: darkmagenta;
+    width: 75%;
+    margin-left: 25px;
+    float: left;
+}
+.customerCare_inr {
+    border-bottom: 1px solid #999;
+}
+.customerCareInner {
+    width: 95%;
+    background: #fff;
+    margin: 0 auto;
+    text-align: justify;
+    /* padding: 15px 15px; */
+}
+.customerCare_inr p {
+    padding: 15px 15px;
+}
+.term_policy_link {
+    text-align: center;
+    padding: 20px 0 100% 0;
+}
+.customerCare_inr .ion-ios-telephone {
+    -webkit-transform: rotate(85deg);
+    -moz-transform: rotate(85deg);
+    -ms-transform: rotate(85deg);
+    -o-transform: rotate(85deg);
+    transform: rotate(85deg);
+}
+/*----------------customer care end------------------------*/
+
+/*----------------sort by popup start---------------------------*/
+
+.sortby_heading {
+    width: 100%;
+    text-align: center;
+    background: #dcee64;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.sort_by_options {
+    width: 100%;
+    list-style: none;
+}
+.sort_by_options li {
+    width: 100%;
+    list-style: none;
+    border-bottom: 1px solid #999;
+    border-top: 1px solid #999;
+    color: #999;
+    font-size: 17px;
+    line-height: 2.5;
+    background: #fff;
+}
+.sortby {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 35%;
+}
+.modal-backdrop-bg {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.sortbycontent {
+    position: relative;
+    z-index: 99;
+}
+.sort_by_icon {
+    margin-top: 12px;
+    width: 18px;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/*-----------------sort by popup end-------------------------*/
+
+/*----------personalize--------------*/
+.personalize {
+    background: #FFF;
+    width: 100%;
+    font-size: 17px;
+}
+.personalize_text {
+    text-align: center;
+    font-size: 17px;
+    padding: 10px 5px;
+    color: #959595;
+}
+.personalize_row {
+    width: 100%;
+    height: 38px;
+}
+.personalize_row label {
+    font-size: 17px;
+    color: #959595;
+    padding-left: 10px;
+    float: left;
+    width: 40%;
+    margin-top: 6px;
+}
+.personalize_row .kids_name {
+    width: 55%;
+    border: 1px solid #959595;
+    float: left;
+}
+.personalize_row .dob {
+    width: 45%;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #959595;
+    float: left;
+    text-align: right;
+    padding: 11px 10px 6px 0px;
+}
+.dob_date {
+    position: absolute;
+    top: 1px;
+    width: 125%;
+    background: none;
+}
+.personalize_row input {
+    padding: 0px 10px;
+    padding-top: 0px !important;
+}
+.dob_icon {
+    position: relative;
+    right: 20px;
+    top: 7px;
+}
+.row_gender {
+    padding-top: 10px;
+    color: #959595;
+}
+.row_gender label {
+    margin-top: 0px !important;
+}
+.personalize_button {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px 20px 0px;
+}
+.submit_button {
+    text-align: center;
+    padding: 8px 15px;
+    background: #ff921b;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+}
+input[type="radio"], input[type="checkbox"] {
+    margin: 5px !important;
+}
+.boy_img {
+    position: absolute;
+    top: 9px;
+    left: 13px;
+    width: 29px;
+}
+.close_x {
+    position: absolute;
+    right: -15px;
+    top: -10px;
+    padding-left: 10px;
+    line-height: 2;
+    background: #ff921b;
+    border: 2px solid #fff;
+    border-radius: 35px;
+    color: #fff;
+    width: 35px;
+    height: 35px;
+}
+.close_text {
+    color: #fff;
+    font-size: 19px;
+    line-height: 1.56;
+}
+/*----------personalize end----------------*/
+
+/*----------filters start------------*/
+.filter_active {
+    display: block;
+}
+.filter_hide {
+    display: none;
+}
+/*---------filters end------------*/
+/*-----------tracking order start-----------------*/
+.tracking_order_p {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.tracking_number {
+    width: 96%;
+    margin: 0 auto;
+    background: #d9d9d9;
+    padding-left: 10px !important;
+    padding-left: 10px !important;
+    height: 45px !important;
+}
+.tracking_order_button {
+    margin-left: 2%;
+    color: #fff;
+    background: #ff921b;
+    padding: 8px 18px;
+    font-size: 18px;
+    border: none;
+}
+.tracking_order_bottom_text {
+    padding: 5px 15px 25px 15px;
+}
+/*-----------tracking order end-------------------------------*/
+/*-----------social share start------------------------------*/
+.socialshare_main li {
+    padding-left: 15px !important;
+    font-size: 18px !important;
+    color: #000 !important;
+}
+.socialshare_main img {
+    position: relative;
+    top: 8px;
+    padding-right: 15px;
+}
+.popover-backdrop {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+/*---------social share end---------------------------*/
+
+/*----------social share popup-------------------------*/
+.sharepopup {
+    text-align: center;
+}
+.sharepopup_main {
+    margin-top: 48% !important;
+}
+.sharepopup li {
+    width: 32% !important;
+    list-style: none !important;
+    border-bottom: 1px solid #999 !important;
+    border-top: 1px solid #999 !important;
+    color: #000 !important;
+    font-size: 17px !important;
+    line-height: 2.5 !important;
+    background: #fff !important;
+    float: left !important;
+    padding-left: 8px !important;
+}
+.sharepopup li i {
+    padding-right: 8px;
+}
+
+/*----------------category list with single row start----------------------------------*/
+
+.RecentyViewedImg-singel-row {
+    width: 30%;
+    float: left;
+}
+.row_data_main {
+    width: 69%;
+    float: left;
+    padding: 3% 0% 3% 3%;
+}
+
+.P-RecentlyViewedHeading-single_row {
+    color: #000;
+    float: left;
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+.add_to_cart_single_row {
+    width: 40%;
+    border: none;
+    background: #ff921b;
+    color: #fff;
+    text-align: center;
+    padding: 4px 8px;
+    float: left;
+    margin-top: 8px;
+}
+.variants_single_row {
+    text-align: center;
+    width: 50%;
+    margin-top: 8px;
+}
+.variants_single_row i {
+    float: none !important;
+}
+.variants_single_row span {
+    color: #7a7a7a !important;
+    font-size: 13px;
+    position: relative;
+    top: -4px;
+}
+.ShortListedShare .ion-android-more-vertical {
+    margin-top: 8px !important;
+    position: relative;
+    z-index: 9;
+}
+.single_row_main {
+    margin-bottom: 10px;
+}
+/*----------------category list with single row end------------------------------------*/
+
+/*-----------category with two row start--------------------------------------*/
+.category_two_row {
+    width: 49%;
+    border-left: 1px solid #d9d9d9;
+    margin: 1px;
+}
+.RecentyViewedImgtworow {
+    width: 79% !important;
+}
+.RecentyViewedImgtworow img {
+    margin-top: 28px;
+}
+.new_two_row {
+    color: #9C3;
+    border: 1px solid #9C3;
+    border-radius: 5px;
+    padding: 0px 5px;
+    margin-left: 5px;
+    font-size: 10px;
+}
+.premium_two_row {
+    color: #ff921b;
+    border: 1px solid #ff921b;
+    border-radius: 5px;
+    padding: 0px 5px;
+    margin-left: 5px;
+    font-size: 10px;
+}
+.top_button_new_premiun {
+    position: absolute;
+    top: 0px;
+    left: 5px;
+}
+.grey_border_bottom {
+    border-bottom: 1px solid #d9d9d9;
+}
+.two_row_detail {
+    width: 80%;
+    font-size: 12px !important;
+    padding-left: 6px;
+    float: left;
+}
+.custom_heart {
+    float: right;
+    text-align: center;
+    width: 15%;
+    font-size: 20px;
+    margin-top: 10px;
+}
+/*-------------category with two row end--------------------------*/
+
+/*---------------premium start---------------------------------------------*/
+.ion-model-s1 {
+    color: #fff !important;
+    padding-bottom: 10px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    text-align: center !important;
+}
+.tabbed-slidebox .tsb-icons a.active {
+    border-bottom: 2px solid #db872f !important;
+}
+.tabs-balanced .scroll-bar {
+    display: none !important;
+}
+.brand_img {
+    width: 40%;
+    text-align: center;
+    float: left;
+}
+.brand_img img {
+    width: 80% !important;
+    margin: 0 auto;
+}
+.brand_name {
+    float: left;
+    line-height: 2.4;
+    width: 59%;
+    text-align: center;
+    color: #757575;
+}
+/*---------------premium end-----------------------------------------------------*/
+
+/*--------------- Cart ------------*/
+.CartThumbs {
+    padding: 10px;
+    background: #fff;
+    margin-bottom: 10px;
+    float: left;
+    position: relative;
+    width: 100%;
+}
+.CartThumbs img {
+    width: 100%;
+    background-size: 100% 100%;
+}
+.CartDelete {
+    background: #f1f1f1;
+    float: right;
+    position: absolute;
+    right: -7px;
+    padding: 1px 6px;
+    border-radius: 4px;
+    top: 10px;
+    border: 1px solid #c9c9c9;
+}
+.CartItemWithName {
+    width: 100%;
+}
+.CartItemImg {
+    float: left;
+    width: 24%;
+    margin-top: 13%;
+}
+.CartItemName {
+    float: right;
+    width: 71%;
+}
+.CItemName {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.CItemDet {
+    line-height: 17px;
+    font-size: 13px;
+    margin-top: 7px;
+    margin-bottom: 0;
+}
+.CartItemPrice {
+
+}
+.CartItemPrice p {
+    line-height: 17px;
+    font-size: 13px;
+    margin-bottom: 0;
+    margin-top: 7px;
+    font-weight: 600;
+}
+.CartItemCounter {
+    float: right;
+    /*width: 45%;*/
+    border: 1px solid #000000;
+    font-size: 18px;
+}
+.CartItemLess {
+    background: #9e9e9e;
+    padding: 3px 10px;
+    float: left;
+    text-align: center;
+    color: #fff;
+}
+.CartItemCount {
+    float: left;
+    padding: 3px 10px;
+    background: #fff;
+    text-align: center;
+    /*width: 35%;*/
+}
+.CartItemAdd {
+    background: #9e9e9e;
+    padding: 3px 10px;
+    float: right;
+    text-align: center;
+    color: #fff;
+}
+.CartSubTotalPin {
+    border-top: 1px solid #d6d6d6;
+    margin-top: 10px;
+    font-size: 12px;
+    float: left;
+    padding-top: 5px;
+}
+.CartSubTotalPin p {
+    margin-bottom: 0;
+}
+.CartThumbs h2 {
+    background: #eaeaea;
+    width: 100%;
+    line-height: 36px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+}
+.PaymentSummaryM {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 13px;
+}
+.PaymentSummaryM p {
+    float: left;
+    text-align: right;
+    width: 52%;
+    font-size: 13px;
+}
+.PaymentSummaryM span {
+    float: right;
+    text-align: left;
+    font-size: 13px;
+    width: 43%;
+    line-height: 1.7;
+}
+.PlaceOrder {
+    background: #ff921b;
+    color: #fff;
+}
+.PincodeCheck {
+    width: 100%;
+    margin-top: 15px;
+}
+.PincodeCheck input {
+    float: left;
+    width: 70%;
+    border-bottom: 1px solid #ccc;
+    margin-left: 8px;
+}
+.PincodeCheck button {
+    float: right;
+    width: 22%;
+    background: #9e9e9e;
+    border: none;
+    line-height: 30px;
+    color: #fff;
+    text-transform: uppercase;
+}
+/*--------------- Cart ------------*/
+
+/*--------------- Develiry Detail ------------*/
+.SubHeaderDeveliry {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#77d0e4+0,659cbf+100 */
+    background: #77d0e4; /* Old browsers */
+    background: -moz-linear-gradient(top,  #77d0e4 0%, #659cbf 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #77d0e4 0%,#659cbf 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #77d0e4 0%,#659cbf 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#77d0e4', endColorstr='#659cbf',GradientType=0 ); /* IE6-9 */
+    width: 100%;
+    height: 44px;
+}
+.Septerator {
+    width: 5% !important;
+    color: rgba(0, 0, 0, 0.5);
+}
+#DeliveryTab .tabs-full-width {
+    width: 100%;
+    margin: 0 auto;
+    top: 18px;
+    background: transparent;
+    border: none;
+    left: 0;
+}
+#DeliveryTab .tab-item.tab-item-active, #DeliveryTab .tab-item.active, #DeliveryTab .tab-item.activated {
+    opacity: 1;
+    border-bottom: 3px solid transparent;
+    background: transparent;
+    font-weight: 400;
+    color: #fff;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+}
+#DeliveryTab .tab-item {
+    border-bottom: 1px solid transparent;
+    background: transparent;
+    color: #fff;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.ContinueBtn {
+    background: #77d0e4; /* Old browsers */
+    background: -moz-linear-gradient(top,  #77d0e4 0%, #659cbf 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #77d0e4 0%,#659cbf 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #77d0e4 0%,#659cbf 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#77d0e4', endColorstr='#659cbf',GradientType=0 ); /* IE6-9 */
+    width: 100%;
+    line-height: 36px;
+    border: none;
+    color: #fff;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+.DelInput1 {
+    width: 20%;
+    float: left;
+}
+.DelInput1 input {
+
+}
+.DelInput2 {
+    width: 16%;
+    float: left;
+    margin-left: 9px;
+}
+.DelInput2 input {
+
+}
+.DelInput3 {
+    width: 57%;
+    float: right;
+}
+.DelInput3 input {
+
+}
+/*--------------- Develiry Detail ------------*/
+
+/*--------------- Summary -------------*/
+.CartItemWithName1 {
+    width: 100%;
+    margin-bottom: 15px;
+}
+.CartItemName1 {
+    float: right;
+    width: 62%;
+}
+.CItemName1 {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.CItemDet1 {
+    line-height: 17px;
+    font-size: 11px;
+    margin-top: 7px;
+    margin-bottom: 0;
+    color: #a2a2a2;
+}
+.NextDayDeliveryM {
+    border-top: 1px solid #A2A2A2;
+    width: 100%;
+    float: left;
+    padding: 15px;
+    border-bottom: #a1a1a1 4px solid;
+}
+.NextDayL {
+    float: left;
+    width: 70%;
+    border-right: #a1a1a1 1px solid;
+}
+.NextDayL input {
+
+}
+.NextDayL p {
+    margin-bottom: 0;
+    font-size: 14px;
+}
+.NextDayR {
+    float: right;
+    width: 25%;
+}
+.ApplyLoyaltyEarn {
+    border-top: 1px solid #A2A2A2;
+    width: 100%;
+    float: left;
+    border-bottom: #a1a1a1 1px solid;
+}
+#SummaryTab .tabs-full-width {
+    width: 100%;
+    margin: 0 auto;
+    top: 18px;
+    background: transparent;
+    border: none;
+    left: 0;
+}
+#SummaryTab .tab-item.tab-item-active, #SummaryTab .tab-item.active, #SummaryTab .tab-item.activated {
+    opacity: 1;
+    border: 1px solid #dddddd;
+    background: #dddddd;
+    font-weight: 400;
+    color: #fff;
+}
+#SummaryTab .tab-item {
+    border: 1px solid #dddddd;
+    background: transparent;
+    /*color: #fff;*/
+    text-transform: capitalize;
+    font-size: 14px;
+}
+.ApplyCoupon1 {
+
+}
+.ApplyCoupon1 input {
+    width: 65%;
+    margin: 0 auto;
+    float: left;
+    margin-left: 10px;
+    padding-left: 5px;
+    margin-top: 10px;
+}
+.ApplyCoupon1 button {
+    float: right;
+    width: 22%;
+    background: #9e9e9e;
+    border: none;
+    line-height: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.ApplyWrapper {
+    background: #ddd;
+    float: left;
+    width: 100%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.LoyaltyCash {
+    color: red;
+    padding: 3px 10px;
+    margin-bottom: 0;
+}
+.GiftWrap {
+    background: #f1f1f1;
+    min-height: 80px;
+    padding: 15px;
+}
+.GiftWrap label {
+    float: left;
+    width: 90%;
+}
+.GiftWrapCheckbox input {
+    float: left;
+}
+.GiftWrapCheckbox p {
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+.CartDetail {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.CartDetail p {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    float: left;
+    width: 100%;
+}
+.CartDetail span {
+    float: right;
+    width: 45%;
+}
+.ContinueBtnDelivery {
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    background: #1484e6;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 40px;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+/*--------------- Summary -------------*/
+
+/*--------------- Item Detail -------------*/
+.ItemWrapper {
+    margin: 10px;
+    width: 94%;
+    float: left;
+}
+.SubHeaderItemDetail {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#77d0e4+0,659cbf+100 */
+    background: #77d0e4; /* Old browsers */
+    background: -moz-linear-gradient(top,  #77d0e4 0%, #659cbf 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #77d0e4 0%,#659cbf 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #77d0e4 0%,#659cbf 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#77d0e4', endColorstr='#659cbf',GradientType=0 ); /* IE6-9 */
+    width: 100%;
+    min-height: 44px;
+    height: auto;
+}
+.SubHeaderItemDetail h2 {
+    font-size: 16px;
+    margin-left: 5px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    line-height: 18px;
+}
+.SubHeaderItemDetail p {
+    font-size: 13px;
+    margin-left: 5px;
+    font-weight: 300;
+    margin-bottom: 0px;
+    line-height: 16px;
+}
+.ItemDetailSlider {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+.ItemSliderImg {
+    width: 65%;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 0;
+}
+.ItemSliderImg img {
+    background-size: 100% 100%;
+    width: 100%;
+}
+.AmountWithSave {
+    border-top: 1px solid #dadada;
+    /*border-bottom: 1px solid #dadada;*/
+}
+.AmountWithSave p {
+    margin-bottom: 0;
+    line-height: 40px;
+    margin-left: 10px;
+}
+.SelectColornSize {
+    border-top: 1px solid #dadada;
+    /*border-bottom: 1px solid #dadada;*/
+    line-height: 40px;
+}
+.ItemSelectColor {
+    float: left;
+    border-right: 1px solid #dadada;
+    width: 50%;
+}
+.ItemSelectColor span {
+    background: #e7e6ec;
+    border: 1px solid #000000;
+    padding: 3px 10px;
+    margin-right: 5px;
+    margin-left: 10px;
+}
+.ItemSizeChart {
+    float: right;
+    width: 50%;
+}
+.ItemSizeChart img {
+    margin-left: 10px;
+    margin-right: 5px;
+}
+.SelectColorA {
+    border-top: 1px solid #dadada;
+    /*border-bottom: 1px solid #dadada;*/
+    line-height: 40px;
+}
+.SelectColorA span {
+    border: 1px solid #000000;
+    padding: 3px 10px;
+    margin-right: 5px;
+    margin-left: 10px;
+}
+.activeColor {
+    border: 2px inset rgba(0,0,0,1) !important;
+    padding: 1px;
+}
+.SelectSizeM {
+    border-top: 1px solid #dadada;
+    /*border-bottom: 1px solid #dadada;*/
+    line-height: 52px;
+}
+.SelectSizeM img {
+    margin-left: 10px;
+    margin-right: 5px;
+    margin-top: 8px;
+    float: left;
+}
+.SelectSizeScroller {
+    border-top: 1px solid #dadada;
+    /*border-bottom: 1px solid #dadada;*/
+    line-height: 52px;
+}
+.SelectSizeScroller span {
+    float: left;
+    border: 1px solid #d1d1d1;
+    border-radius: 100px;
+    padding: 2px 14px;
+    line-height: 25px;
+    margin: 10px 3px 10px 8px;
+}
+.SelectSizeScroller span.SelectSizeActive {
+    border: 1px solid #366fe3;
+    background: #366fe3;
+    color: #fff;
+}
+.DeliveryInfoM {
+    border-top: 1px solid #dadada;
+    /*border-bottom: 1px solid #dadada;*/
+    line-height: 60px;
+    width: 100%;
+    float: left;
+    height: 70px;
+}
+.DeliveryInfoM p {
+    line-height: 20px;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+.DeliveryInfoM input {
+    float: left;
+    width: 65%;
+    border-bottom: 1px solid #ccc;
+    margin-left: 8px;
+}
+.DeliveryInfoM button {
+    float: right;
+    width: 22%;
+    background: #9e9e9e;
+    border: none;
+    line-height: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+.SelectColornSize1 {
+    border-top: 1px solid #dadada;
+    /* border-bottom: 1px solid #dadada; */
+    line-height: 45px;
+    height: 45px;
+}
+.EarnLoyaltyL {
+    float: left;
+    border-right: 1px solid #dadada;
+    width: 70%;
+}
+.EarnLoyaltyL p {
+    margin-bottom: 0;
+    font-size: 13px;
+}
+.EarnLoyaltyL img {
+    margin-left: 10px;
+    margin-right: 5px;
+    margin-top: 9px;
+    float: left;
+}
+.EarnLoyaltyR {
+    float: right;
+    width: 28%;
+    line-height: 1.2;
+    text-align: center;
+    margin-top: 6px;
+}
+.FreeReturn {
+    border-top: 1px solid #dadada;
+    /* border-bottom: 1px solid #dadada; */
+    line-height: 45px;
+    height: 45px;
+}
+.FreeReturn img {
+    float: left;
+    margin-left: 10px;
+    margin-right: 5px;
+    margin-top: 9px;
+}
+.FreeReturn p {
+    float: left;
+    margin-bottom: 0;
+    line-height: 45px;
+}
+.FreeReturn i {
+    float: right;
+    line-height: 45px;
+    margin-right: 10px;
+}
+.BrandInformaiton {
+    width: 94%;
+    float: left;
+    margin: 10px;
+    margin-top: 0px;
+}
+.BrandInformaiton p {
+    float: left;
+    margin-bottom: 0;
+    line-height: 45px;
+    margin-left: 10px;
+    font-weight: 600;
+}
+.BrandInformaiton i {
+    float: right;
+    line-height: 45px;
+    margin-right: 10px;
+}
+/*--------------- Item Detail -------------*/
+
+/*--------------- Add Gift Wrap -------------*/
+.AddGiftWrap {
+    background: #fff;
+    font-size: 12px;
+    text-align: center;
+    line-height: 22px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000;
+}
+.AddGiftWrapM {
+    background: #fff;
+}
+.AddGiftInputs {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.AddGiftWrapInner {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 5px;
+}
+.AddGiftWrapInner input {
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    height: 35px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 300;
+}
+.AddGiftWrapInner textarea {
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    height: 35px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 300;
+}
+.close_x_1 {
+    position: absolute;
+    right: -15px;
+    top: -10px;
+    padding-left: 10px;
+    line-height: 2;
+    background: #595959;
+    border: 2px solid #fff;
+    border-radius: 35px;
+    color: #fff;
+    width: 35px;
+    height: 35px;
+}
+/*--------------- Add Gift Wrap -------------*/
+
+/*--------------- Payment --------------*/
+.CraditOrDabitCard {
+    background: #fce14a;
+    min-height: 44px;
+}
+.CraditOrDabitCard label {
+    padding: 10px;
+    width: 100%;
+    float: left;
+}
+.CraditOrDabitCard input {
+    float: left;
+    margin-right: 10px;
+}
+.CraditOrDabitCard p {
+    float: left;
+    margin-right: 10px;
+}
+.CraditOrDabitCard i {
+    float: left;
+}
+
+/*--------------- Payment --------------*/
+
+/*--------------issues css---------------------*/
+.searchBg {
+    height: 100%;
+    background: #fff;
+    width: 100%;
+    position: absolute;
+}
+.popupDashSearchInput {
+    background: white;
+    width: 71%;
+    margin: 0 auto;
+    padding: 0;
+    border-radius: 100px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-top: 6px;
+    float: left;
+    margin-left: 15px;
+}
+.searchCancelButton {
+    line-height: 3;
+    font-size: 18px;
+    margin-left: 9px;
+    color: #fff;
+}
+
+/*---------------------new css---------------------------------*/
+.header_side_bar_border_img{
+	height: 32px;
+	float: left;
+}
+.secure_checkout_icon{
+	float: left;
+	margin-top: 8px;
+}
+.title{
+	line-height: 35px !important;
+	float: left;
+	position: relative !important;
+	margin-right: 0px !important;
+	width: 95px !important;
+}
+.secure_checkout_main {
+	float: left;
+}
+.person_icon{
+	position: absolute;
+    right: 8px;
+    width: 32px;
+    top: 10px;
+}
+.secure_checkout{
+	font-size: 15px;
+    line-height: 36px;
+}
+

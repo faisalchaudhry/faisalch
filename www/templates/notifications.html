@@ -1,0 +1,49 @@
+<ion-view >
+    <ion-header-bar class="bar bar-header HeaderColor">
+
+		<h1 class="title TitleCenter TitleColor" style="text-align: left;left:0px;"> Firstcoo </h1>
+		<div class="TwoIconHeader">
+			<button ng-click="goToCartPage()" class="button button-clear icon-right ion-android-cart MenuIconColor">
+				<span class="badge badge-assertive CartCounter">01</span>
+			</button>
+			<button ng-click="popover.show($event)" class="button button-clear icon-right ion-ios-person MenuIconColor" style="width: 28px; "></button>
+			<button menu-toggle="right" class="button button-clear icon-right ion-android-menu MenuIconColor"></button>
+		</div>
+	</ion-header-bar>
+    <div class="bar bar-subheader SubHeaderNotification">
+        <p>
+            Notifications
+        </p>
+    </div>
+    <ion-content class="has-header has-subheader" style="background: #d9d9d9;">
+        <div class="Wrapper">
+            <div class="NotificationsMain">
+                <div class="NotificationThumbs">
+                    <div class="NotificationDelete">
+                        <i class="fa fa-trash-o"></i>
+                    </div>
+                    <a> <span class="P-Boutique-heading-L">Fashion, Fest starts today!</span> <span class="P-Boutique-heading2-R RedColor">04 Apr</span> <span class="P-Boutique-heading2-L">Shop Apparel, Footwear & Accessories</span>
+                    <div class="NotificationImg"><img src="img/Notifications/notification-1.png">
+                    </div></a>
+                    
+                </div>
+                <div class="NotificationThumbs">
+                    <div class="NotificationDelete">
+                        <i class="fa fa-trash-o"></i>
+                    </div>
+                    <a> <span class="P-Boutique-heading-L">April is here!</span> <span class="P-Boutique-heading2-R RedColor">01 Apr</span> <span class="P-Boutique-heading2-L">Restock your Monthly Essentials</span>
+                    <div class="NotificationImg"><img src="img/Notifications/notification-2.png">
+                    </div> </a>
+                </div>
+                <div class="NotificationThumbs">
+                    <div class="NotificationDelete">
+                        <i class="fa fa-trash-o"></i>
+                    </div>
+                    <a> <span class="P-Boutique-heading-L">You Left Items in your cart!</span> <span class="P-Boutique-heading2-R RedColor">24 Mar</span> <span class="P-Boutique-heading2-L">We noticed you couldn't complete your order</span>
+                    <div class="NotificationImg"><img src="img/Notifications/notification-3.png">
+                    </div> </a>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

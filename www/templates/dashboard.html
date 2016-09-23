@@ -1,0 +1,285 @@
+<ion-view>
+	<ion-header-bar class="bar bar-header HeaderColor">
+
+		<h1 class="title TitleCenter TitleColor" style="text-align: left;left:0px;"> Firstcoo </h1>
+		<div class="TwoIconHeader">
+			<button ng-click="goToCartPage()" class="button button-clear icon-right ion-android-cart MenuIconColor">
+				<span class="badge badge-assertive CartCounter">01</span>
+			</button>
+			<button ng-click="popover.show($event)" class="button button-clear icon-right ion-ios-person MenuIconColor" style="width: 28px; "></button>
+			<button menu-toggle="right" class="button button-clear icon-right ion-android-menu MenuIconColor"></button>
+		</div>
+	</ion-header-bar>
+
+	<ion-content style="background: #f8f8f6;" class="has-header">
+		<div class="DashSearch">
+			<div class="list">
+				<label class="item item-input DashSearchInput"> <i class="icon ion-search placeholder-icon"></i>
+					<input type="search" placeholder="Search for product or brand">
+					<i class="fa fa-microphone placeholder-icon"></i> </label>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<div class="Wrapper">
+			<ion-slide-box class="SliderMain" show-pager="true" does-continue="true" auto-play="true">
+				<ion-slide>
+					<div class="SliderImg">
+						<img src="img/Slider-1.jpg" />
+					</div>
+				</ion-slide>
+				<ion-slide>
+					<div class="SliderImg">
+						<img src="img/Slider-2.jpg" />
+					</div>
+				</ion-slide>
+				<ion-slide>
+					<div class="SliderImg">
+						<img src="img/Slider-3.jpg" />
+					</div>
+				</ion-slide>
+				<ion-slide>
+					<div class="SliderImg">
+						<img src="img/Slider-4.jpg" />
+					</div>
+				</ion-slide>
+				<ion-slide>
+					<div class="SliderImg">
+						<img src="img/Slider-5.jpg" />
+					</div>
+				</ion-slide>
+				<ion-slide>
+					<div class="SliderImg">
+						<img src="img/Slider-6.jpg" />
+					</div>
+				</ion-slide>
+			</ion-slide-box>
+			<div class="clear"></div>
+			<!-- Shop By Category -->
+			<div class="PremiumBoutiqueExplore DarkGreyBackground">
+				<div class="BoutiqueExploreL">
+					<img src="img/premium_botique_explore.png" />
+				</div>
+				<div class="BoutiqueExploreR">
+					<h2> Boutiques </h2>
+					<p>
+						Explore <i class="icon ion-ios-arrow-right"></i>
+					</p>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="ShopByCategoryDashboard WhiteBackground">
+				<h2> Shop By Category </h2>
+				<div class="ShopbyCategoryThumbs">
+					<div class="Dash-Cat-1" ng-click="goToDetails()">
+						<img src="img/baby_diapering.jpg" />
+						<span class="Dash-Cat-Name DarkGreyBackground"> Diapering, Care & Feeding <span class="TriangleD"></span> </span>
+					</div>
+					<div class="clear"></div>
+					<div class="Dash-Cat-2">
+						<div class="Cat-L" ng-click="goToDetails()">
+							<img src="img/baby-fashion.jpg" />
+							<span class="Dash-Cat-Name DarkGreyBackground"> Baby Fashion <span class="TriangleD"></span> </span>
+						</div>
+						<div class="Cat-R" ng-click="goToDetails()">
+							<div class="Cat-R-Top">
+								<img src="img/kids-fashion.jpg" />
+								<span class="Dash-Cat-Name DarkGreyBackground"> Kids Fashion <span class="TriangleD"></span> </span>
+							</div>
+							<div class="Cat-R-Botom" ng-click="goToDetails()">
+								<img src="img/kids-footwear.jpg" />
+								<span class="Dash-Cat-Name DarkGreyBackground"> Kids Fashion <span class="TriangleD"></span> </span>
+							</div>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="Dash-Cat-3">
+						<div class="Cat-L-half" ng-click="goToDetails()">
+							<img src="img/baby-gear.jpg" />
+							<span class="Dash-Cat-Name DarkGreyBackground"> Baby Gear & Nursery <span class="TriangleD"></span> </span>
+						</div>
+						<div class="Cat-R-half" ng-click="goToDetails()">
+							<img src="img/baby-toys.jpg" />
+							<span class="Dash-Cat-Name DarkGreyBackground"> Toys <span class="TriangleD"></span> </span>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="Dash-Cat-3">
+						<div class="Cat-L-half" ng-click="goToDetails()">
+							<img src="img/mom-maternity.jpg" />
+							<span class="Dash-Cat-Name DarkGreyBackground"> Mom & Maternity <span class="TriangleD"></span> </span>
+						</div>
+						<div class="Cat-R-half" ng-click="goToDetails()">
+							<img src="img/birthday-gifts.jpg" />
+							<span class="Dash-Cat-Name DarkGreyBackground"> Birthday & Gifts <span class="TriangleD"></span> </span>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="Dash-Cat-3">
+						<div class="Cat-L-half" ng-click="goToDetails()">
+							<img src="img/baby-offers.jpg" />
+							<span class="Dash-Cat-Name DarkGreyBackground"> Offers <span class="TriangleD"></span> </span>
+						</div>
+						<div class="Cat-R-half" ng-click="goToDetails()">
+							<img src="img/firstcoo-store.jpg" />
+							<span class="Dash-Cat-Name DarkGreyBackground"> Firstcoo Stores <span class="TriangleD"></span> </span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Shop By Category -->
+
+			<div class="clear"></div>
+			<!-- Premium Boutique Main -->
+			<div class="DarkGreyBackground PremiumBoutiqueMain">
+				<div class="PremiumBoutiqueM DarkGreyBackground">
+					<div class="BoutiqueExploreL">
+						<img src="img/premium_botique_explore.png" />
+					</div>
+					<div class="BoutiqueExploreR">
+						<h2> Boutiques </h2>
+					</div>
+				</div>
+				<div class="BoutiqueThumbsMain">
+					<div class="BoutiqueThumbs">
+						<a> <img src="img/premium_boutique_img_1.jpg"> <span class="P-Boutique-heading-L">Style up with bottoms</span> <span class="P-Boutique-heading-R RedColor">NEW TODAY</span> <span class="P-Boutique-heading2-L">Match with your favourites..</span> <span class="P-Boutique-heading2-R RedColor">shop now</span> </a>
+					</div>
+					<div class="BoutiqueThumbs">
+						<a> <img src="img/premium_boutique_img_2.jpg"> <span class="P-Boutique-heading-L">Style up with bottoms</span> <span class="P-Boutique-heading-R RedColor">NEW TODAY</span> <span class="P-Boutique-heading2-L">Match with your favourites..</span> <span class="P-Boutique-heading2-R RedColor">shop now</span> </a>
+					</div>
+					<div class="BoutiqueThumbs">
+						<a> <img src="img/premium_boutique_img_3.jpg"> <span class="P-Boutique-heading-L">Style up with bottoms</span> <span class="P-Boutique-heading-R RedColor">NEW TODAY</span> <span class="P-Boutique-heading2-L">Match with your favourites..</span> <span class="P-Boutique-heading2-R RedColor">shop now</span> </a>
+					</div>
+					<div class="BoutiqueThumbs">
+						<a> <img src="img/premium_boutique_img_4.jpg"> <span class="P-Boutique-heading-L">Style up with bottoms</span> <span class="P-Boutique-heading-R RedColor">NEW TODAY</span> <span class="P-Boutique-heading2-L">Match with your favourites..</span> <span class="P-Boutique-heading2-R RedColor">shop now</span> </a>
+					</div>
+					<div class="BoutiqueThumbs">
+						<a> <img src="img/premium_boutique_img_5.jpg"> <span class="P-Boutique-heading-L">Style up with bottoms</span> <span class="P-Boutique-heading-R RedColor">NEW TODAY</span> <span class="P-Boutique-heading2-L">Match with your favourites..</span> <span class="P-Boutique-heading2-R RedColor">shop now</span> </a>
+					</div>
+					<div class="BoutiqueThumbs">
+						<a> <img src="img/premium_boutique_img_6.jpg"> <span class="P-Boutique-heading-L">Style up with bottoms</span> <span class="P-Boutique-heading-R RedColor">NEW TODAY</span> <span class="P-Boutique-heading2-L">Match with your favourites..</span> <span class="P-Boutique-heading2-R RedColor">shop now</span> </a>
+					</div>
+					<div class="BoutiqueThumbs">
+						<a> <img src="img/premium_boutique_img_7.jpg"> <span class="P-Boutique-heading-L">Style up with bottoms</span> <span class="P-Boutique-heading-R RedColor">NEW TODAY</span> <span class="P-Boutique-heading2-L">Match with your favourites..</span> <span class="P-Boutique-heading2-R RedColor">shop now</span> </a>
+					</div>
+					<div class="BoutiqueThumbs">
+						<a> <img src="img/view-all-boutiques-banner.jpg"> </a>
+					</div>
+					<div class="BoutiqueThumbs">
+						<a> <img src="img/view-all-premium-brands.jpg"> </a>
+					</div>
+				</div>
+			</div>
+			<!-- Premium Boutique Main -->
+			<div class="clear"></div>
+			<div class="SliderMain2">
+				<div class="SecondSliderHeader BlueBackground">
+					FirstCoo Special
+				</div>
+				<div class="ThreeItemData tsb-ic-wrp">
+					<ion-scroll direction="x" class="tsb-hscroll">
+
+						<div class="BabyClothesSlider">
+							<div class="CustomSlideTop">
+								<p>
+									Bleeding Blue By Babyhug
+								</p>
+							</div>
+							<div class="CustomSlideMiddle">
+								<img src="img/baby-clothes/slider-img-1.png" />
+							</div>
+							<div class="CustomSlideBottom">
+								Shop Now
+							</div>
+						</div>
+
+						<div class="BabyClothesSlider">
+							<div class="CustomSlideTop">
+								<p>
+									Bleeding Blue By Babyhug
+								</p>
+							</div>
+							<div class="CustomSlideMiddle">
+								<img src="img/baby-clothes/slider-img-2.png" />
+							</div>
+							<div class="CustomSlideBottom">
+								Shop Now
+							</div>
+						</div>
+
+						<div class="BabyClothesSlider">
+							<div class="CustomSlideTop">
+								<p>
+									Bleeding Blue By Babyhug
+								</p>
+							</div>
+							<div class="CustomSlideMiddle">
+								<img src="img/baby-clothes/slider-img-1.png" />
+							</div>
+							<div class="CustomSlideBottom">
+								Shop Now
+							</div>
+						</div>
+
+						<div class="BabyClothesSlider">
+							<div class="CustomSlideTop">
+								<p>
+									Bleeding Blue By Babyhug
+								</p>
+							</div>
+							<div class="CustomSlideMiddle">
+								<img src="img/baby-clothes/slider-img-2.png" />
+							</div>
+							<div class="CustomSlideBottom">
+								Shop Now
+							</div>
+						</div>
+
+						<div class="BabyClothesSlider">
+							<div class="CustomSlideTop">
+								<p>
+									Bleeding Blue By Babyhug
+								</p>
+							</div>
+							<div class="CustomSlideMiddle">
+								<img src="img/baby-clothes/slider-img-1.png" />
+							</div>
+							<div class="CustomSlideBottom">
+								Shop Now
+							</div>
+						</div>
+
+						<div class="BabyClothesSlider">
+							<div class="CustomSlideTop">
+								<p>
+									Bleeding Blue By Babyhug
+								</p>
+							</div>
+							<div class="CustomSlideMiddle">
+								<img src="img/baby-clothes/slider-img-2.png" />
+							</div>
+							<div class="CustomSlideBottom">
+								Shop Now
+							</div>
+						</div>
+
+						<div class="BabyClothesSlider">
+							<div class="CustomSlideTop">
+								<p>
+									Bleeding Blue By Babyhug
+								</p>
+							</div>
+							<div class="CustomSlideMiddle">
+								<img src="img/baby-clothes/slider-img-1.png" />
+							</div>
+							<div class="CustomSlideBottom">
+								Shop Now
+							</div>
+						</div>
+					</ion-scroll>
+				</div>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>
+<style>
+</style>

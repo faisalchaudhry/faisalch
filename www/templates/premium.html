@@ -1,0 +1,39 @@
+<ion-view >
+	<ion-header-bar class="bar bar-header HeaderColor">
+
+		<h1 class="title TitleCenter TitleColor" style="text-align: left;left:0px;"> Firstcoo </h1>
+		<div class="TwoIconHeader">
+			<button ng-click="goToCartPage()" class="button button-clear icon-right ion-android-cart MenuIconColor">
+				<span class="badge badge-assertive CartCounter">01</span>
+			</button>
+			<button ng-click="popover.show($event)" class="button button-clear icon-right ion-ios-person MenuIconColor" style="width: 28px; "></button>
+			<button menu-toggle="right" class="button button-clear icon-right ion-android-menu MenuIconColor"></button>
+		</div>
+	</ion-header-bar>
+	<ion-content class="has-header" style="background: #3d3d3d;">
+		<div class="BabyClothesBanner">
+			<img src="img/baby-clothes/baby-clothes-banner.png">
+		</div>
+		<tab-slide-box class="tabs-positive">
+			<div class="tsb-icons tabs-balanced" style="background:none;">
+				<div class="tsb-ic-wrp">
+					<ion-scroll direction="x" class="tsb-hscroll" >
+						<a class="ion-model-s1">Today's Boutiques</a>
+						<a class="ion-model-s1">Bestsellers</a>
+						<a class="ion-model-s1">Last Day</a>
+						<a class="ion-model-s1">Premium Brands</a>
+						<a class="ion-model-s1">Shop By Category</a>
+						<a class="ion-model-s1">Shop By Age</a>
+						<a class="ion-model-s1">Upcoming Boutiques</a>
+					</ion-scroll>
+				</div>
+			</div>
+			<ion-slide-box show-pager="false" class="SliderMain slider"  does-continue="false"  style="visibility: visible;"  on-slide-changed="slideHasChanged($index);slideHasChangeds($index)" >
+				<ion-slide ng-repeat="slide in data.slides">
+					<div ng-include src="slide.template"></div>
+				</ion-slide>
+			</ion-slide-box>
+
+		</tab-slide-box>
+	</ion-content>
+</ion-view>

@@ -1,0 +1,44 @@
+<ion-view >
+    <ion-header-bar class="bar bar-header HeaderColor">
+
+		<h1 class="title TitleCenter TitleColor" style="text-align: left;left:0px;"> Firstcoo </h1>
+		<div class="TwoIconHeader">
+			<button ng-click="goToCartPage()" class="button button-clear icon-right ion-android-cart MenuIconColor">
+				<span class="badge badge-assertive CartCounter">01</span>
+			</button>
+			<button ng-click="popover.show($event)" class="button button-clear icon-right ion-ios-person MenuIconColor" style="width: 28px; "></button>
+			<button menu-toggle="right" class="button button-clear icon-right ion-android-menu MenuIconColor"></button>
+		</div>
+	</ion-header-bar>
+    <ion-content class="has-header" style="background: #d9d9d9;">
+        <div class="Wrapper">
+              <div class="privacypolicyMain">
+                <div class="BabyClothesThumbs" style="background:none;">
+                    <h2 style="background:#fadb32 !important;"> Privacy Policy </h2>
+                    <div class="privacypolicyInner">
+                    	<p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                       </p>
+                       <p> 
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </p>
+                     <ion-list>
+                        <div  ng-repeat="group in groups" style="margin-bottom: 15px;">
+                          <ion-item class="item-stable" ng-click="toggleGroup(group)" ng-class="{active: isGroupShown(group)}">
+                              <i class="icon right" ng-class="isGroupShown(group) ? 'ion-minus' : 'ion-plus'"></i>
+                           {{group.name}}
+                          </ion-item>
+                          <ion-item class="item-accordion"  ng-show="isGroupShown(group)" style="margin=bottom:15px;text-overflow: inherit;white-space: inherit;">
+                           <p style="padding:15px;text-align:justify; text-overflow: inherit;white-space: inherit;line-height:20px;"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                          </ion-item>
+                        </div>
+                       
+                      </ion-list>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </ion-content>
+</ion-view>

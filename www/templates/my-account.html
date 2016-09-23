@@ -1,0 +1,172 @@
+<ion-view >
+	<ion-header-bar class="bar bar-header HeaderColor">
+
+		<h1 class="title TitleCenter TitleColor" style="text-align: left;left:0px;"> Firstcoo </h1>
+		<div class="TwoIconHeader">
+			<button ng-click="goToCartPage()" class="button button-clear icon-right ion-android-cart MenuIconColor">
+				<span class="badge badge-assertive CartCounter">01</span>
+			</button>
+			<button ng-click="popover.show($event)" class="button button-clear icon-right ion-ios-person MenuIconColor" style="width: 28px; "></button>
+			<button menu-toggle="right" class="button button-clear icon-right ion-android-menu MenuIconColor"></button>
+		</div>
+	</ion-header-bar>
+	<ion-content class="has-header" style="background: #d9d9d9;">
+		<div class="Wrapper">
+			<div class="myaccountMain">
+				<div class="BabyClothesThumbs" style="background:none;">
+					<h2 style="background:#fadb32 !important;"> Account Details </h2>
+					<div class="myaccountInner">
+						<ion-list>
+							<div>
+								<ion-item class="item-stable" ng-click="toggleGroup('0')" ng-class="{active: isGroupShown('0')}">
+									<i class="icon right" ng-class="isGroupShown('0') ? 'ion-minus' : 'ion-plus'"></i>
+									Cash In My Account
+								</ion-item>
+								<ion-item class="item-accordion"  ng-show="isGroupShown('0')" style="margin=bottom:15px;text-overflow: inherit;white-space: inherit;">
+									<ul class="cash_in_my_account">
+										<li>
+											Loyalty Cash
+										</li>
+										<li>
+											Cash Refund
+										</li>
+										<li>
+											Cash Coupons
+										</li>
+										</
+									</ul>
+								</ion-item>
+							</div>
+
+							<div  >
+								<ion-item class="item-stable" ng-click="toggleGroup('1')" ng-class="{active: isGroupShown('1')}">
+									<i class="icon right" ng-class="isGroupShown('1') ? 'ion-minus' : 'ion-plus'"></i>
+									Order History
+								</ion-item>
+								<ion-item class="item-accordion"  ng-show="isGroupShown('1')" style="margin=bottom:15px;text-overflow: inherit;white-space: inherit;">
+									<ul class="cash_in_my_account">
+										<li>
+											Order History
+										</li>
+										<li>
+											Quick Reorder
+										</li>
+										<li>
+											Track Order
+										</li>
+										</
+									</ul>
+								</ion-item>
+							</div>
+
+							<div  >
+								<ion-item class="item-stable" ng-click="toggleGroup('2')" ng-class="{active: isGroupShown('2')}">
+									<i class="icon right" ng-class="isGroupShown('2') ? 'ion-minus' : 'ion-plus'"></i>
+									My Profile
+								</ion-item>
+								<ion-item class="item-accordion"  ng-show="isGroupShown('2')" style="margin=bottom:15px;text-overflow: inherit;white-space: inherit;">
+									<ul class="cash_in_my_account">
+										<li>
+											Contact Details
+										</li>
+										<li>
+											Personal Details
+										</li>
+										<li>
+											Child Details
+										</li>
+										<li>
+											Change Password
+										</li>
+										</
+									</ul>
+								</ion-item>
+							</div>
+
+							<div  >
+								<ion-item class="item-stable" >
+									<i class="icon right" ></i>
+									Guarantee Savings
+								</ion-item>
+
+							</div>
+
+							<div  >
+								<ion-item class="item-stable" >
+									<i class="icon right" ></i>
+									Invites and Credit
+								</ion-item>
+
+							</div>
+
+							<div  >
+								<ion-item class="item-stable" ng-click="toggleGroup('3')" ng-class="{active: isGroupShown('3')}">
+									<i class="icon right" ng-class="isGroupShown('3') ? 'ion-minus' : 'ion-plus'"></i>
+									Manage Alerts
+								</ion-item>
+								<ion-item class="item-accordion"  ng-show="isGroupShown('3')" style="margin=bottom:15px;text-overflow: inherit;white-space: inherit;">
+									<ul class="cash_in_my_account">
+										<li>
+											Notify Me
+										</li>
+										<li>
+											My Shortlist
+										</li>
+										<li>
+											My Recently Viewed
+										</li>
+									</ul>
+								</ion-item>
+							</div>
+
+							<div  >
+								<ion-item class="item-stable" >
+									<i class="icon right" ></i>
+									Logout
+								</ion-item>
+
+							</div>
+
+						</ion-list>
+
+					</div>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</ion-content>
+</ion-view>
+
+<style>
+	.myaccountInner {
+		width: 95%;
+		margin: 0 auto;
+		text-align: justify;
+		padding: 15px 15px;
+	}
+	ul.cash_in_my_account {
+		list-style: none;
+		border: none;
+		background: #ededed;
+		padding-left: 10px;
+		margin-left: 5px;
+	}
+	.item-accordion {
+		border: none;
+		text-overflow: inherit;
+		white-space: inherit;
+		border-top: 1px solid #ddd !important;
+		background: none !important;
+	}
+	ul.cash_in_my_account li:before {
+		content: "\2023 \0020" !important;
+	}
+	.myaccountMain {
+		width: 100%;
+		background: #d9d9d9;
+	}
+	.item.item-stable {
+		border-color: #ddd !important;
+		background-color: #fff !important;
+	}
+</style>

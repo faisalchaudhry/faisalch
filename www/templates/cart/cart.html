@@ -1,0 +1,114 @@
+<ion-view >
+    <ion-header-bar class="bar bar-header HeaderColor">
+
+		<h1 class="title TitleCenter TitleColor" style="text-align: left;left:0px;"> Firstcoo </h1>
+		<div class="TwoIconHeader">
+			<button ng-click="goToCartPage()" class="button button-clear icon-right ion-android-cart MenuIconColor">
+				<span class="badge badge-assertive CartCounter">01</span>
+			</button>
+			<button ng-click="popover.show($event)" class="button button-clear icon-right ion-ios-person MenuIconColor" style="width: 28px; "></button>
+			<button menu-toggle="right" class="button button-clear icon-right ion-android-menu MenuIconColor"></button>
+		</div>
+	</ion-header-bar>
+    <div class="bar bar-subheader SubHeaderNotification">
+        <p class="left">
+            My Cart (1 Product)
+        </p>
+        <p class="right" style="text-decoration: underline; font-size: 12px; margin-right: 10px;">
+            Remove All
+        </p>
+    </div>
+    <ion-content class="has-header has-subheader has-footer" style="background: #d9d9d9;">
+        <div class="Wrapper">
+            <div class="NotificationsMain">
+                <div class="CartThumbs">
+                    <div class="CartDelete">
+                        <i class="fa fa-trash-o"></i>
+                    </div>
+                    <div class="CartItemWithName">
+                        <div class="CartItemImg"><img src="img/cart/item_img.png" />
+                        </div>
+                        <div class="CartItemName">
+                            <p class="CItemName">
+                                Pampers Baby Dry Diapers Newborn To Small - 5 Pieces
+                            </p>
+                            <p class="CItemDet">
+                                Upto 8 Kg, 1 Papers = 1 Dry Night, With magic gel and cotton
+                            </p>
+                            <div class="CartItemPrice">
+                                <p>
+                                    RS 54.15
+                                </p>
+                                <p style="margin-top: 0;">
+                                    <strike> RS 57.00 </strike>
+                                </p>
+                                <p style="margin-top: 3px; color: red; font-weight: normal;">
+                                    (5.00% OFF)
+                                </p>
+                            </div>
+                            <div class="CartItemCounter">
+                                <div class="CartItemLess" ng-click="CartItemCount(-1)">
+                                    -
+                                </div>
+                                <div class="CartItemCount">
+                                    {{cartItem}}
+                                </div>
+                                <div class="CartItemAdd" ng-click="CartItemCount(1)">
+                                    +
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="CartSubTotalPin">
+                            <p>
+                                Enter Pincode below to check Delivery Information.
+                            </p>
+                            <p class="right">
+                                <b>RS  324.90</b>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="CartThumbs" style="margin-bottom: 20px;">
+                    <h2> Payment Summary </h2>
+                    <div class="PaymentSummaryM">
+                        <p>
+                            Value of Products :
+                        </p>
+                        <span> RS 342.00 </span>
+                        <p>
+                            Your Savings (-) :
+                        </p>
+                        <span> RS 342.00 </span>
+                        <p>
+                            Shipping Charges (?) :
+                        </p>
+                        <span> <strike> RS 50.00 </strike>FREE </span>
+                        <div class="CartSubTotalPin" style="margin-top: 0;">
+                            <p>
+                                <b> Final Payment : </b>
+                            </p>
+                            <span> RS 324.00 </span>
+                            <p>
+                                <b> Destination Pincode : </b>
+                            </p>
+                            <span> </span>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="PincodeCheck">
+                        <input type="tel" placeholder="Enter Pincode" />
+                        <button type="button">
+                            Check
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+    <div ng-click="goToDeveleryPage()" class="bar bar-footer PlaceOrder">
+        <div class="title">
+            Place Order
+        </div>
+    </div>
+</ion-view>

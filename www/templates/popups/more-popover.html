@@ -1,0 +1,54 @@
+<ion-popover-view ng-controller="PopoverCtrl">
+    <ion-content>
+        <div class="list" id="PopoverM">
+            <a class="item item-icon-left popoverCustom" ng-click="goToLoginRegister();popover.hide();"> <i class="fa fa-user"></i> Login/Register </a>
+            <a class="item item-icon-left popoverCustom" ng-click="goToNotifications();popover.hide();"> <i class="fa fa-bell"></i> Notifications </a>
+            <a class="item item-icon-left popoverCustom" ng-click="goToTrackingorder();popover.hide();"> <i class="fa fa-truck"></i> Track Order </a>
+            <a href="https://play.google.com/" class="item item-icon-left popoverCustom" target="_blank" ng-click="popover.hide();"> <i class="fa fa-star"></i> Rate this App </a>
+            <a class="item item-icon-left popoverCustom" ng-click="socialshare.show();popover.hide();"> <i class="fa fa-share-alt"></i> Share this App </a>
+            <a class="item item-icon-left popoverCustom" ng-click="goToCustomerServices();popover.hide();"> <i class="fa fa-phone"></i> Customer Service </a>
+            <a class="item item-icon-left popoverCustom" ng-click="goToTermandCondition();popover.hide();"> <i class="fa fa-file-text-o"></i> Terms And Conditions </a>
+            <a class="item item-icon-left popoverCustom" ng-click="goToPrivacypolicy();popover.hide();"> <i class="fa fa-user-secret"></i> Privacy Policy </a>
+        </div>
+    </ion-content>
+</ion-popover-view>
+<style>
+    .platform-ios .popover {
+        top: 32px !important;
+        left: 96px !important;
+        background: #eaeaea;
+        height: 310px;
+    }
+    .popover-arrow {
+        display: none !important;
+    }
+    #PopoverM .item {
+        border-color: #ddd;
+        background-color: #eaeaea;
+        color: #444;
+        position: relative;
+        z-index: 2;
+        display: block;
+        margin: -1px;
+        padding: 7px 16px;
+        border-width: 1px;
+        border-style: solid;
+        font-size: 16px;
+        padding-left: 10px;
+    }
+    #PopoverM a i {
+        padding-left: 15px;
+        margin-right: 20px;
+        color: #444;
+        font-size: 20px !important;
+    }
+    .popover .item:last-child {
+        border-bottom: none !important;
+    }
+    .popover .item:first-child {
+        border-top: none !important;
+    }
+    .popoverCustom i {
+        font-size: 24px !important;
+    }
+</style>

@@ -1,0 +1,22 @@
+<div class="Wrapper sortby">
+    <div class="sortbycontent">
+        <p class="close_x" ng-click="personalize.hide();"><span class="close_text">X</span></p>
+        <img src="img/boy_img.png" class="boy_img" />
+        <h2 class="sortby_heading">Personalization</h2>
+        <div class="personalize">
+        <p class="personalize_text">Enter your Child's details for best results:</p>
+        
+        <div class="personalize_inner">
+        
+        <p class="personalize_row"><label>Kids Name:</label><input type="text" name="kids_name" class="kids_name" /></p>
+        
+        <p  class="personalize_row"><label>Date of Birth:</label><span class="dob ion-calendar"><input type="date" name="dob"  class="dob_date" /></span></p>
+        
+    <p  class="personalize_row row_gender" style="margin-top: 0px;"><label>Gender:</label><input type="radio" name="gender" />Boy &nbsp;&nbsp;<input type="radio" name="gender" />Girl</p>    
+        
+        <p class="personalize_button"><input ng-click="personalize.hide();" type="submit" class="submit_button" value="SUBMIT" /></p>
+        </div>
+       
+        </div>
+    </div>
+</div>

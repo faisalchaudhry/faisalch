@@ -1,0 +1,246 @@
+<ion-side-menus enable-menu-with-back-views="false">
+    <ion-side-menu-content>
+
+        <ion-nav-view name="menuContent"></ion-nav-view>
+    </ion-side-menu-content>
+
+    <ion-side-menu side="right">
+        <ion-content class="has-header MenuItemtop">
+            <ion-list id="MenuItem">
+                <ion-item class="item-icon-left" menu-close >
+                    <b>Home</b>
+                </ion-item>
+                <ion-item class="item-icon-left" menu-close ng-click="goToMenuPages(0)" id="MenuIcon">
+                    <img src="img/menu-icons/bell-icon.png" width="20"  style="margin-left: 0px; margin-right: 8px;"/>
+                    Notifications
+                </ion-item>
+                <ion-item class="item-icon-left" menu-close ng-click="goToMenuPages(1)" id="MenuIcon">
+                    <img src="img/menu-icons/tag-icon.png" width="20"  style="margin-left: 0px; margin-right: 8px;"/>
+                    Offer Zone
+                </ion-item>
+                <!-- Activity -->
+                <ion-item class="item-stable item-icon-right" ng-click="toggleactivity(activity)" ng-class="{active: isActivityShown(activity)}">
+                    My Activity
+                    <i class="icon" ng-class="isActivityShown(activity) ? 'ion-ios-arrow-down' : 'ion-ios-arrow-right'"></i>
+                </ion-item>
+                <ion-item class="item-accordion item-icon-left item-icon-right" ng-show="isActivityShown(activity)">
+                    <div class="SubMenuActivity" ng-click="goToMenuPages(2)" menu-close>
+                        <i class="fa fa-eye"></i>
+                        Recently Viewed
+                    </div>
+                    <div class="SubMenuActivity" ng-click="goToMenuPages(3)" menu-close>
+                        <i class="fa fa-book"></i>
+                        My Shortlist
+                    </div>
+                    <div class="SubMenuActivity" ng-click="goToMenuPages(4)" menu-close>
+                        <i class="fa fa-shopping-cart"></i>
+                        Quick Reorder
+                    </div>
+                </ion-item>
+                <!-- Activity -->
+
+                <!-- Shop By Category -->
+                <ion-item class="item-stable item-icon-right" ng-click="toggleCategory(shopCategory)" ng-class="{active: isCategoryShown(shopCategory)}">
+                    Shop By Category
+                    <i class="icon" ng-class="isCategoryShown(shopCategory) ? 'ion-ios-arrow-down' : 'ion-ios-arrow-right'"></i>
+                </ion-item>
+                <ion-item class="item-accordion item-icon-left item-icon-right" ng-show="isCategoryShown(shopCategory)">
+
+                    <!-- Baby Fashion -->
+                    <div class="SubMenuActivity" ng-click="toggleBabyFashion(babyFashion)" id="MenuIcon">
+                        <img src="img/menu-icons/baby-icon.png" width="20" />
+                        Baby Fashion
+                        <i class="icon" id="ExpandPlusMinus" ng-class="isBabyCategoryShown(babyFashion) ? 'ion-android-remove' : 'ion-android-add'"></i>
+                    </div>
+                    <ion-item id="SubExpand"  class="item-accordion item-icon-left item-icon-right" ng-show="isBabyCategoryShown(babyFashion)">
+                        <div class="SubExpandMenu" ng-click="goToMenuPages(5)" menu-close>
+                            Clothes
+                        </div>
+                        <div class="SubExpandMenu" ng-click="goToMenuPages(6)" menu-close>
+                            Footwear
+                        </div>
+                    </ion-item>
+                    <!-- Baby Fashion -->
+
+                    <!-- Kids Fashion -->
+                    <div class="SubMenuActivity" ng-click="toggleKidsFashion(kidsFashion)" id="MenuIcon">
+                        <img src="img/menu-icons/kid-icon.png" width="20" />
+                        Kids Fashion
+                        <i class="icon" id="ExpandPlusMinus" ng-class="iskidsFashionShown(kidsFashion) ? 'ion-android-remove' : 'ion-android-add'"></i>
+                    </div>
+                    <ion-item id="SubExpand" class="item-accordion item-icon-left item-icon-right" ng-show="iskidsFashionShown(kidsFashion)">
+                        <div class="SubExpandMenu" ng-click="goToMenuPages(7)" menu-close>
+                            Clothes
+                        </div>
+                        <div class="SubExpandMenu" ng-click="goToMenuPages(8)" menu-close>
+                            Footwear
+                        </div>
+                        <div class="SubExpandMenu" ng-click="goToMenuPages(9)" menu-close>
+                            Accessories
+                        </div>
+                    </ion-item>
+                    <!-- Kids Fashion -->
+
+                    <div class="SubMenuActivity" ng-click="goToMenuPages(10)" menu-close id="MenuIcon">
+                        <img src="img/menu-icons/footwear-icon.png" width="20" />
+                        Footwear
+                    </div>
+
+                    <!-- Toys, Books & School Supplis Fashion -->
+                    <div class="SubMenuActivity" ng-click="toggleToysBooks(toysBooks)" id="MenuIcon">
+                        <img src="img/menu-icons/toy-icon.png" width="20" />
+                        Toys, Books & School Supplis
+                        <i class="icon" id="ExpandPlusMinus" ng-class="istoysBooksShown(toysBooks) ? 'ion-android-remove' : 'ion-android-add'"></i>
+                    </div>
+                    <ion-item id="SubExpand" class="item-accordion item-icon-left item-icon-right" ng-show="istoysBooksShown(toysBooks)">
+                        <div class="SubExpandMenu" ng-click="goToMenuPages(11)" menu-close>
+                            Baby Toys (0 to 2 years)
+                        </div>
+                        <div class="SubExpandMenu" ng-click="goToMenuPages(12)" menu-close>
+                            Kids Toys (2 to 12 years)
+                        </div>
+                        <div class="SubExpandMenu" ng-click="goToMenuPages(13)" menu-close>
+                            Books & CDs
+                        </div>
+                        <div class="SubExpandMenu" ng-click="goToMenuPages(14)" menu-close>
+                            School Supplies
+                        </div>
+                    </ion-item>
+                    <!-- Toys, Books & School Supplis Fashion -->
+
+                    <!-- Baby Gear & Nursery -->
+                    <div class="SubMenuActivity" ng-click="toggleBabyGear(babyGear)" id="MenuIcon">
+                        <img src="img/menu-icons/gear-icon.png" width="20" />
+                        Baby Gear & Nursery
+                        <i class="icon" id="ExpandPlusMinus" ng-class="isBabyGearShown(babyGear) ? 'ion-android-remove' : 'ion-android-add'"></i>
+                    </div>
+                    <ion-item id="SubExpand" class="item-accordion item-icon-left item-icon-right" ng-show="isBabyGearShown(babyGear)">
+                        <div class="SubExpandMenu" ng-click="goToMenuPages(15)" menu-close>
+                            Baby Gear
+                        </div>
+                        <div class="SubExpandMenu" ng-click="goToMenuPages(16)" menu-close>
+                            Nursery
+                        </div>
+                    </ion-item>
+                    <!-- Baby Gear & Nursery -->
+
+                    <!-- Diapering Care & Feeding -->
+                    <div class="SubMenuActivity" ng-click="toggleDiaperingFeeding(diaperingFeeding)" id="MenuIcon">
+                        <img src="img/menu-icons/diaper-icon.png" width="20" />
+                        Diapering Care & Feeding
+                        <i class="icon" id="ExpandPlusMinus" ng-class="isDiaperingFeedingShown(diaperingFeeding) ? 'ion-android-remove' : 'ion-android-add'"></i>
+                    </div>
+                    <ion-item id="SubExpand" class="item-accordion item-icon-left item-icon-right" ng-show="isDiaperingFeedingShown(diaperingFeeding)">
+                        <div class="SubExpandMenu" ng-click="goToMenuPages(17)" menu-close>
+                            Diapering
+                        </div>
+                        <div class="SubExpandMenu" ng-click="goToMenuPages(18)" menu-close>
+                            Feeding & Nursing
+                        </div>
+                        <div class="SubExpandMenu" ng-click="goToMenuPages(19)" menu-close>
+                            Bath & Skin Care
+                        </div>
+                        <div class="SubExpandMenu" ng-click="goToMenuPages(20)" menu-close>
+                            Health & Seafty
+                        </div>
+                    </ion-item>
+                    <!-- Diapering Care & Feeding -->
+
+                    <!-- Mom & Maternity -->
+                    <div class="SubMenuActivity" ng-click="toggleMomMaternity(momMaternity)" id="MenuIcon">
+                        <img src="img/menu-icons/mom-icon.png" width="20" />
+                        Mom & Maternity
+                        <i class="icon" id="ExpandPlusMinus" ng-class="isMomMaternityShown(momMaternity) ? 'ion-android-remove' : 'ion-android-add'"></i>
+                    </div>
+                    <ion-item id="SubExpand" class="item-accordion item-icon-left item-icon-right" ng-show="isMomMaternityShown(momMaternity)">
+                        <div class="SubExpandMenu" ng-click="goToMenuPages(21)" menu-close>
+                            Maternity Wear
+                        </div>
+                        <div class="SubExpandMenu" ng-click="goToMenuPages(22)" menu-close>
+                            New Mom Essentials
+                        </div>
+                    </ion-item>
+                    <!-- Mom & Maternity -->
+
+                    <!-- Birthday & Gifts -->
+                    <div class="SubMenuActivity" ng-click="toggleBirthdayGifts(birthdayGifts)" id="MenuIcon">
+                        <img src="img/menu-icons/gift-icon.png" width="20" />
+                        Birthday & Gifts
+                        <i class="icon" id="ExpandPlusMinus" ng-class="isBirthdayGiftsShown(birthdayGifts) ? 'ion-android-remove' : 'ion-android-add'"></i>
+                    </div>
+                    <ion-item id="SubExpand" class="item-accordion item-icon-left item-icon-right" ng-show="isBirthdayGiftsShown(birthdayGifts)">
+                        <div class="SubExpandMenu" ng-click="goToMenuPages(23)" menu-close>
+                            Gifts
+                        </div>
+                        <div class="SubExpandMenu" ng-click="goToMenuPages(24)" menu-close>
+                            Birthday Products
+                        </div>
+                        <div class="SubExpandMenu" ng-click="goToMenuPages(25)" menu-close>
+                            Gifts Certificate
+                        </div>
+                    </ion-item>
+                    <!-- Birthday & Gifts -->
+
+                    <!-- Premium -->
+                    <div class="SubMenuActivity" ng-click="togglePremium(cPremium)" id="MenuIcon">
+                        <img src="img/menu-icons/premium-icon.png" width="20" />
+                        Premium
+                        <i class="icon" id="ExpandPlusMinus" ng-class="isPremiumShown(cPremium) ? 'ion-android-remove' : 'ion-android-add'"></i>
+                    </div>
+                    <ion-item id="SubExpand" class="item-accordion item-icon-left item-icon-right" ng-show="isPremiumShown(cPremium)">
+                        <div class="SubExpandMenu" ng-click="goToMenuPages(26)" menu-close>
+                            Today's Boutiques
+                        </div>
+                        <div class="SubExpandMenu" ng-click="goToMenuPages(27)" menu-close>
+                            Best Sellers
+                        </div>
+                        <div class="SubExpandMenu" ng-click="goToMenuPages(28)" menu-close>
+                            Last Day
+                        </div>
+                        <div class="SubExpandMenu" ng-click="goToMenuPages(29)" menu-close>
+                            Upcoming
+                        </div>
+                        <div class="SubExpandMenu" ng-click="goToMenuPages(30)" menu-close>
+                            Premium Brands
+                        </div>
+                    </ion-item>
+                    <!-- Premium -->
+
+                </ion-item>
+
+                <!-- Shop By Category -->
+
+                <ion-item class="item-icon-left" menu-close ng-click="goToMenuPages(31)" id="MenuIcon">
+                    <img src="img/menu-icons/tag-icon.png" width="20" style="margin-left: 0px; margin-right: 8px;"/>
+                    Offers
+                </ion-item>
+                <ion-item class="item-icon-left" menu-close id="MenuIcon">
+                    <img src="img/menu-icons/shop-icon.png" width="20" style="margin-left: 0px; margin-right: 8px;" />
+                    FirstCoo Stores
+                </ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-side-menu>
+</ion-side-menus>
+<style>
+    #MenuItem .item {
+        border-color: #ddd;
+        background-color: #fff;
+        color: #444;
+        position: relative;
+        z-index: 2;
+        display: block;
+        margin: -1px;
+        padding: 10px 20px;
+        border-width: 1px;
+        border-style: solid;
+        font-size: 14px;
+    }
+    #MenuItem .item-complex .item-content, #menu_item .item-radio .item-content {
+        position: relative;
+        z-index: 2;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+    }
+</style>

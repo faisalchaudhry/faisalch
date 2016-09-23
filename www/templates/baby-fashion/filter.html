@@ -1,0 +1,37 @@
+<div class="Wrapper FilterBg">
+    <div class="FilterHeader">
+        <h2>Filter By</h2>
+        <div class="FilterHeaderButtons">
+            <div class="FilterCancel" ng-click="modalFilter.hide()">
+                Cancel
+            </div>
+            <div class="FilterApply" ng-click="modalFilter.hide()">
+                Apply
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    
+    <div class="FilterContentMain">
+        <div class="FilterContentLeft">
+            <ul>
+                <li  ng-repeat="filter in filters" class="{{filter.tag_class}}" ng-click="showfilersdata($index);">
+                    <i class="{{filter.icon}}"></i>
+                    {{filter.name}}
+                </li>
+                
+            </ul>
+        </div>
+        <div class="FilterContentRight">
+          <ion-scroll zooming="true" direction="y" > 
+            <ul ng-repeat="filter in filters"  class="{{filter.filter_class}}">
+                <li ng-repeat="filterdata in filter.filters">
+                    <ion-checkbox >
+                        {{filterdata.name}}
+                    </ion-checkbox>
+                </li>
+            </ul>
+            </ion-scroll>
+        </div>
+    </div>
+</div>

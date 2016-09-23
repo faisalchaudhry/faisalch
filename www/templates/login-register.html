@@ -1,0 +1,34 @@
+<ion-view >
+	<ion-header-bar class="bar bar-header HeaderColor">
+
+		<h1 class="title TitleCenter TitleColor" style="text-align: left;left:0px;"> Firstcoo </h1>
+		<div class="TwoIconHeader">
+			<button ng-click="goToCartPage()" class="button button-clear icon-right ion-android-cart MenuIconColor">
+				<span class="badge badge-assertive CartCounter">01</span>
+			</button>
+			<button ng-click="popover.show($event)" class="button button-clear icon-right ion-ios-person MenuIconColor" style="width: 28px; "></button>
+			<button menu-toggle="right" class="button button-clear icon-right ion-android-menu MenuIconColor"></button>
+		</div>
+	</ion-header-bar>
+	<div class="bar bar-subheader SubHeaderNotification">
+		<p>
+			{{headerValue}}
+		</p>
+	</div>
+	<ion-content style="background: #d9d9d9;" class="has-header has-subheader">
+		<div class="Wrapper">
+			<div class="WhiteBackground LoginRegisterMain">
+				<div class="OfferZoneTabsMain" id="LoginRegisterTab">
+					<div class="OfferZoneTabs tabs tabs-full-width" style="line-height: 33px; height: 36px;">
+						<a ng-click="changeTab(1)" ng-class="LoginRegisterTab1Class">LOGIN</a>
+						<a ng-click="changeTab(2)" ng-class="LoginRegisterTab2Class">REGISTER</a>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<!-- Login Register -->
+				<div  class="Tab-1" ng-include src="template"></div>
+				<!-- Login Register -->
+			</div>
+		</div>
+	</ion-content>
+</ion-view>

@@ -1,0 +1,75 @@
+<ion-view >
+    <ion-header-bar class="bar bar-header HeaderColor">
+        <h1 class="title TitleCenter TitleColor" ng-click="goToDashboard()" style="left:0 !important;"> Firstcoo </h1>
+        <div class="secure_checkout_main" >
+        	<img src="img/cart/secure_checkout_sidebar.png" class="header_side_bar_border_img" />
+            <img src="img/cart/secure_checkout_icon.png" class="secure_checkout_icon" width="16" />
+            <span class="secure_checkout">SECURE CHECKOUT</span>
+        </div>
+        <div class="person_icon">
+            <img src="img/cart/person_icon.png"  />
+        </div>
+    </ion-header-bar>
+    <div class="bar bar-subheader SubHeaderDeveliry">
+        <div class="OfferZoneTabsMain" id="DeliveryTab">
+            <div class="OfferZoneTabs tabs tabs-full-width" style="line-height: 33px; height: 36px;">
+                <a disabled="disabled" style="text-decoration: underline;" ng-click="changeTab(1)" ng-class="OffersTab1Class">Login</a>
+                <span class="Septerator"> > </span>
+                <a ng-click="changeTab(2)" ng-class="OffersTab2Class">Delivery</a>
+                <span class="Septerator"> > </span>
+                <a ng-click="changeTab(3)" ng-class="OffersTab3Class">Summary</a>
+                <span class="Septerator"> &nbsp; > </span>
+                <a ng-click="changeTab(4)" ng-class="OffersTab4Class">Payment</a>
+            </div>
+        </div>
+    </div>
+    <ion-content class="has-header has-subheader" style="background: #fff;">
+        <div class="Wrapper">
+            <!-- Today's Deals -->
+            <div  class="Tab-1" ng-include src="template"></div>
+            <!-- Today's Deals -->
+            <div class="clear"></div>
+            <div class="GiftWrap">
+                <label class="GiftWrapCheckbox" ng-click="addGiftWrap.show($event)">
+                    <input type="checkbox" >
+                    <p style="font-size: 14px;">
+                        gift wrap this order @ Rs30
+                    </p>
+                    <p style="font-size: 10px;">
+                        cash on delivery not available in Gift wrap order
+                    </p> </label>
+            </div>
+            <div class="clear"></div>
+            <div class="CartDetail">
+                <p>
+                    Value of Products <span> : &nbsp; &nbsp; &nbsp; &nbsp; Rs.342 </span>
+                </p>
+                <p>
+                    Your Savings &nbsp;(-) <span> : &nbsp; &nbsp; &nbsp; &nbsp; Rs.17.10 </span>
+                </p>
+                <p>
+                    Shipping(+) &nbsp;<strong style="color: #0000ff;">[?]</strong><span> : &nbsp; &nbsp; &nbsp; &nbsp; <strike> Rs.50 </strike> FREE</span>
+                </p>
+                <p>
+                    Final Payment <span> : &nbsp; &nbsp; &nbsp; &nbsp; Rs.324.90 </span>
+                </p>
+            </div>
+            <div class="clear"></div>
+            <div class="ContinueBtnDelivery">
+                Continue
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
+<style>
+    .HeaderColor h1 {
+        left: 5px !important;
+        text-align: left !important;
+        width: 100px !important;
+    }
+    .tab-item.disabled, .tab-item[disabled] {
+        opacity: 1;
+        cursor: default;
+        pointer-events: none;
+    }
+</style>

@@ -1,0 +1,32 @@
+<ion-view >
+	<ion-header-bar class="bar bar-header HeaderColor">
+
+		<h1 class="title TitleCenter TitleColor" style="text-align: left;left:0px;"> Firstcoo </h1>
+		<div class="TwoIconHeader">
+			<button ng-click="goToCartPage()" class="button button-clear icon-right ion-android-cart MenuIconColor">
+				<span class="badge badge-assertive CartCounter">01</span>
+			</button>
+			<button ng-click="popover.show($event)" class="button button-clear icon-right ion-ios-person MenuIconColor" style="width: 28px; "></button>
+			<button menu-toggle="right" class="button button-clear icon-right ion-android-menu MenuIconColor"></button>
+		</div>
+	</ion-header-bar>
+	<ion-content class="has-header" style="background: #d9d9d9;">
+		<div class="Wrapper">
+			<div class="termandconditionMain">
+				<div class="BabyClothesThumbs" style="background:none;">
+					<h2 style="background:#fadb32 !important;"> Loyalty Cash </h2>
+					<div class="termandconditionInner">
+						<p>
+							You currently do not have any Loyalty Cash in your account.
+						</p>
+						<p>
+							Now avail loyalty cash benefits on transactions at the Babydeal.com Stores too! Update & verify your mobile number to get started! View <a ng-click="goToTermandCondition();">T&C</a>
+						</p>
+
+					</div>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</ion-content>
+</ion-view>

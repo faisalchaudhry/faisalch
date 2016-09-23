@@ -1,0 +1,44 @@
+<ion-view >
+	<ion-header-bar class="bar bar-header HeaderColor">
+
+		<h1 class="title TitleCenter TitleColor" style="text-align: left;left:0px;"> Firstcoo </h1>
+		<div class="TwoIconHeader">
+			<button ng-click="goToCartPage()" class="button button-clear icon-right ion-android-cart MenuIconColor">
+				<span class="badge badge-assertive CartCounter">01</span>
+			</button>
+			<button ng-click="popover.show($event)" class="button button-clear icon-right ion-ios-person MenuIconColor" style="width: 28px; "></button>
+			<button menu-toggle="right" class="button button-clear icon-right ion-android-menu MenuIconColor"></button>
+		</div>
+	</ion-header-bar>
+	<ion-content class="has-header" style="background: #d9d9d9;">
+		<div class="Wrapper">
+			<div class="termandconditionMain">
+				<div class="BabyClothesThumbs" style="background:none;">
+					<h2 style="background:#fadb32 !important;"> Tracking Order </h2>
+					<div class="customerCareInner">
+						<div class="customerCare_inr">
+							<p>
+								Please enter your Order Number below. T%o check your Order Number,you can either check your order conformation email or log in to the account and check your order history.
+							</p>
+						</div>
+
+						<p class="tracking_order_p">
+							<input type="text" class="tracking_number" name="tracking_number" placeholder="Enter Order Number" value=""/>
+						</p>
+
+						<p class="tracking_order_p">
+							<input type="submit" class="tracking_order_button" name="tracking_order_button"  value="TRACK ORDER"/>
+						</p>
+
+						<p class="tracking_order_bottom_text">
+							In case of any further queries, please call us on +91-20-46608100 or +91-20-66806999 (From 9 AM to 8 PM India Time)
+						</p>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="clear"></div>
+		</div>
+	</ion-content>
+</ion-view>

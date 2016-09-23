@@ -1,0 +1,40 @@
+<ion-view >
+	<ion-header-bar class="bar bar-header HeaderColor">
+
+		<h1 class="title TitleCenter TitleColor" style="text-align: left;left:0px;"> Firstcoo </h1>
+		<div class="TwoIconHeader">
+			<button ng-click="goToCartPage()" class="button button-clear icon-right ion-android-cart MenuIconColor">
+				<span class="badge badge-assertive CartCounter">01</span>
+			</button>
+			<button ng-click="popover.show($event)" class="button button-clear icon-right ion-ios-person MenuIconColor" style="width: 28px; "></button>
+			<button menu-toggle="right" class="button button-clear icon-right ion-android-menu MenuIconColor"></button>
+		</div>
+	</ion-header-bar>
+	<div class="bar bar-subheader SubHeaderNotification">
+		<p>
+			My Shortlist (1 Result)
+		</p>
+	</div>
+	<ion-content class="has-header has-subheader" style="background: #d9d9d9;">
+		<div class="Wrapper">
+			<div class="RecentyViewedMain">
+				<div class="WhiteBackground ShortListM">
+					<div class="RecentyViewedThumbs">
+						<div class="RecentyViewedImg"><img src="img/RecentlyViewed/recently_viewed_1.png">
+						</div>
+						<div class="RecentyViewedDelete">
+							<i class="fa fa-trash-o"></i>
+						</div>
+						<a> <span class="P-RecentlyViewedHeading">Peaches & Cream by Babyhug Rhinestone Studded...</span> <span class="P-RecentlyViewedHeading2">6 to 12 Months, Your daughter will look nothing less than a princess in the dress</span> </a>
+						<p class="DarkGrey">
+							<span class="RedColor">Rs. 959</span> &nbsp; <span style="text-decoration: line-through;">Rs.1129</span> (15% OFF)
+						</p>
+					</div>
+					<div ng-click="ShareShortList()" class="ShortListedShare">
+						<i class="icon ion-android-more-vertical"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>

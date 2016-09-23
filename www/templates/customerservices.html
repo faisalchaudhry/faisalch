@@ -1,0 +1,53 @@
+<ion-view >
+	<ion-header-bar class="bar bar-header HeaderColor">
+
+		<h1 class="title TitleCenter TitleColor" style="text-align: left;left:0px;"> Firstcoo </h1>
+		<div class="TwoIconHeader">
+			<button ng-click="goToCartPage()" class="button button-clear icon-right ion-android-cart MenuIconColor">
+				<span class="badge badge-assertive CartCounter">01</span>
+			</button>
+			<button ng-click="popover.show($event)" class="button button-clear icon-right ion-ios-person MenuIconColor" style="width: 28px; "></button>
+			<button menu-toggle="right" class="button button-clear icon-right ion-android-menu MenuIconColor"></button>
+		</div>
+	</ion-header-bar>
+	<ion-content class="has-header" style="background: #d9d9d9;">
+		<div class="Wrapper">
+			<div class="termandconditionMain">
+				<div class="BabyClothesThumbs" style="background:none;">
+					<h2 style="background:#fadb32 !important;"> Customer Services </h2>
+					<div class="customerCareInner">
+						<div class="customerCare_inr">
+							<p>
+								For question about product,events,orders or your account:
+								<br/>
+
+								<i class="icon ion-email" style="font-size: 40px;color: grey;"></i>
+								<span id="email-id">customercare@firstcry.com</span>
+							</p>
+						</div>
+						<div class="customerCare_inr">
+							<div style="padding: 15px 15px;">
+								<i class="icon ion-ios-telephone" style="font-size: 40px;color: grey;float:left;"></i>
+								<div id="phone-id">
+									+91-20-46608000
+									<br />
+									+9120-123654789
+								</div>
+							</div>
+							<p style="margin-top: 24px;">
+								All days from 9 AM to 8 PM India time
+							</p>
+						</div>
+						<div>
+							<p class="term_policy_link">
+								<span ng-click="goToTermandCondition();">TERM & CONDITION</span>&nbsp;|&nbsp;<span ng-click="goToPrivacypolicy();">PRIVACY POLICY</span>
+							</p>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</ion-content>
+</ion-view>

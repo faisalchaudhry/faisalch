@@ -1,0 +1,101 @@
+.tabbed-slidebox .slider {
+	height: 100%;
+}
+.tabbed-slidebox.btm .slider {
+	margin-bottom: -50px;
+}
+.tabbed-slidebox .slider-slides {
+	width: 100%;
+}
+
+.tabbed-slidebox .slider-slide {
+	padding-top: 0px;
+	color: #000;
+	background-color: #fff;
+	text-align: center;
+	font-weight: 300;
+	background-color: #0398dc;
+}
+
+.tabbed-slidebox .tsb-icons {
+	text-align: center;
+	margin: 10px 0;
+	position: relative;
+	background-color: #fff;
+}
+
+.tabbed-slidebox .tsb-ic-wrp {
+	display: flex;
+	position: relative;
+	-webkit-transition: -webkit-transform 0.3s; /* For Safari 3.1 to 6.0 */
+	-webkit-transform: translate3d(0,0,0);
+}
+
+.tabbed-slidebox .tsb-icons a {
+	display: inline-block;
+	width: 54px;
+	font-size: 2.5em;
+	color: rgba(0, 0, 0, 0.3);
+	-webkit-transform: translate3d(0,8px,0);
+}
+
+.tabbed-slidebox .tsb-icons a.active {
+	color: rgba(0, 0, 0, 1);
+	font-size: 3.5em;
+	-webkit-transform: translate3d(0,0,0);
+}
+
+.tabbed-slidebox .tabbed-slidebox {
+	position: relative;
+	height: 100%;
+	overflow: hidden;
+}
+
+.tabbed-slidebox .tsb-icons:after {
+	width: 0;
+	height: 0;
+	/*border-style: solid;
+	border-width: 0 1.4em 1.4em 1.4em;
+	border-color: transparent transparent #0398dc transparent;*/
+	position: absolute;
+	content: "";
+	display: block;
+	bottom: -12px;
+	left: 50%;
+	margin-left: -14px;
+}
+.tsb-hscroll.scroll-view {
+	white-space: nowrap;
+	margin: 0 auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.tsb-hscroll.scroll-view .scroll-bar {
+	visibility: hidden;
+}
+.tsb-hscroll.scroll-view .scroll.onscroll {
+	-webkit-transition: -webkit-transform 0.3s; /* For Safari 3.1 to 6.0 */
+}
+
+.tabbed-slidebox .tsb-icons .scroll a {
+	width: auto;
+	font-size: 1.1em;
+	/*line-height: 1.5em;*/
+	text-decoration: none;
+	margin: 0 20px;
+	/*border-bottom: 13px solid transparent !important;
+    border-top: 12px solid transparent !important;*/
+}
+.tabbed-slidebox .tsb-icons .scroll a.active {
+	font-size: 1.1em !important;
+	/*border-bottom: 3px solid #ccc;*/
+	/*font-weight: bold  !important;*/
+}
+.tabbed-slidebox .tsb-icons a.active{
+    border-bottom: 2px solid #db872f !important;
+}
+@media screen and (max-width:360px){
+	.tabbed-slidebox .tsb-icons .scroll a {
+	margin: 0 7px;
+}
+}

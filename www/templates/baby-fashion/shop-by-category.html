@@ -1,0 +1,33 @@
+<ion-view >
+    <ion-header-bar class="bar bar-header HeaderColor">
+
+		<h1 class="title TitleCenter TitleColor" style="text-align: left;left:0px;"> Firstcoo </h1>
+		<div class="TwoIconHeader">
+			<button ng-click="goToCartPage()" class="button button-clear icon-right ion-android-cart MenuIconColor">
+				<span class="badge badge-assertive CartCounter">01</span>
+			</button>
+			<button ng-click="popover.show($event)" class="button button-clear icon-right ion-ios-person MenuIconColor" style="width: 28px; "></button>
+			<button menu-toggle="right" class="button button-clear icon-right ion-android-menu MenuIconColor"></button>
+		</div>
+	</ion-header-bar>
+    <div class="bar bar-subheader SubHeaderNotification">
+        <p>
+            Category Title Here (2 Results)
+        </p>
+    </div>
+    <div class="bar bar-subheader SubHeaderCategory" id="CategoryTab">
+        <div class="CategroyTabs tabs tabs-full-width">
+            <a ng-click="sortby.show($event)" ng-class="CategroyTab1Class"><i class="fa fa-sort-alpha-asc" style="font-size: 22px; position: relative; top: 4px;"></i>&nbsp; SORT</a>
+            <a ng-click="modalFilter.show($event)" ng-class="CategroyTab2Class"><i class="fa fa-filter" style="color: #45a1f6; font-size: 22px; position: relative; top: 4px;"></i>&nbsp;FILTERS (15)</a>
+            <a ng-click="changeTab(3);changeTabview();" ng-class="CategroyTab3Class"><i class="{{icon_class}}" style="font-size: 22px; position: relative; top: 5px;"></i></a>
+            <a ng-click="personalize.show($event)" ng-class="CategroyTab4Class"><img style="width: 30px; top: 10px; position: relative;" src="img/baby-clothes/baby-icon.png"></a>
+        </div>
+    </div>
+    <ion-content style="background: #d9d9d9; top: 154px;" class="has-header has-subheader">
+        <div class="Wrapper">
+                <!-- Category List -->
+                <div   class="Tab-1" ng-include src="template"></div>
+                <!-- Category List -->
+        </div>
+    </ion-content>
+</ion-view>
